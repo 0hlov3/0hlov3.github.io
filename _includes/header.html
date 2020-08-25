@@ -1,0 +1,139 @@
+<span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover" style="background-image: url({{ site.baseurl }}{{ site.backgroundimage }})">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
+          <img src="{{ site.baseurl }}{{ site.profilepic }}" class="user-image" alt="0hlov3s Profile Photo">
+          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">{{ site.description }}</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>Blog</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+
+            {% if site.author.mastodon_username %}
+              <!-- mastodon -->
+              <li class="navigation__item">
+                <a href="https://mstdn.social/@{{ site.author.mastodon_username }}" title="{{ site.author.mastodon_username }}@mstdn.social" target="_blank">
+                  <i class="icon"><img src="/images/logos/mastodon.png" style="height:24px"></img></i>
+                  <span class="label">mastodon</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.pixelfed_username %}
+              <!-- stackoverflow -->
+              <li class="navigation__item">
+                <a href="https://pixelfed.social/{{ site.author.pixelfed_username }}" title="{{ site.author.pixelfed_username }} on pixelfed" target="_blank">
+                  <i class="icon"><img src="/images/logos/pixelfed.png" style="height:24px"></img></i>
+                  <span class="label">pixelfed</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.twitter_username %}
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.facebook_username %}
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.linkedin_username %}
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.github_username %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.reddit_username %}
+              <!-- reddit -->
+              <li class="navigation__item">
+                <a href="https://www.reddit.com/user/{{ site.author.reddit_username }}" title="{{ site.author.reddit_username }} on reddit" target="_blank">
+                  <i class="icon icon-social-reddit"></i>
+                  <span class="label">reddit</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.stackoverflow.username %}
+              <!-- stackoverflow -->
+              <li class="navigation__item">
+                <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow.userid }}" title="{{ site.author.stackoverflow.username }} on stackoverflow" target="_blank">
+                  <i class="icon icon-social-stack-overflow"></i>
+                  <span class="label">stackoverflow</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            {% endif %}
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>

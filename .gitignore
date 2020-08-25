@@ -1,4 +1,9 @@
+_site
+_site/*
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+*.sublime-project
+*.sublime-workspace
+.DS_Store
 vendor
