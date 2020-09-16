@@ -4,7 +4,7 @@ date:   2020-09-15 18:30:00 +0200
 categories: [0hlov3]
 tags: [git]
 ---
-In the last few days, I have been working on my gitconfig extensively, and I would likev to tell you the steps I’ve taken to get my work done.
+In the last few days, I have been working on my gitconfig extensively, and I would like to tell you the steps I’ve taken to get my work done.
 
 ## Setup your initial ~/.gitconfig
 First of all i created a clean new ~/.gitconfig so i can start from zero.
