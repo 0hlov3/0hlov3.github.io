@@ -1,8 +1,8 @@
 ---
 title:  "Problems with git commit autosigning on mac"
 date:   2020-09-22 11:30:00 +0200
-categories: [0hlov3]
-tags: [git]
+categories: [git]
+tags: ["git", "gitconfig"]
 ---
 i have the Problem, that i get a error messahe sometimes, since i've enabled git gpgsign on mac.
 

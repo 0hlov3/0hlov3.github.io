@@ -1,8 +1,8 @@
 ---
 title:  "How to Gitconfig"
 date:   2020-09-15 18:30:00 +0200
-categories: [0hlov3]
-tags: [git]
+categories: [git]
+tags: ["git", "gitconfig"]
 ---
 In the last few days, I have been working on my gitconfig extensively, and I would like to tell you the steps I’ve taken to get my work done.
 
