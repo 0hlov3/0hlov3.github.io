@@ -1,6 +1,6 @@
 ---
 title:  "Problems with git commit autosigning on mac"
-date:   2020-09-15 18:30:00 +0200
+date:   2020-09-22 11:30:00 +0200
 categories: [0hlov3]
 tags: [git]
 ---
