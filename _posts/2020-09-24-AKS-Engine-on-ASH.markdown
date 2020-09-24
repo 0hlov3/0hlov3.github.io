@@ -25,15 +25,15 @@ The service principal needs enough privileges to customize the virtual networks 
 If you don't already have a virtual network for your AKS installation, you need to create one. You can decide where to create your virtual network, maybe you already have a network resource group. If you already habe a vnet, you can skip this step.
 
 ```bash
-az network vnet create --address-prefixes 10.222.0.0/16 --name $k8sVnetName --resource-group $RG-NETWORK --subnet-name $KubernetesMasterSubnet --subnet-prefixes 10.202.1.0/25
+az network vnet create --address-prefixes 10.222.0.0/16 --name $k8sVnetName --resource-group $RG-NETWORK --subnet-name $KubernetesMasterSubnet --subnet-prefixes 10.222.1.0/25
 ```
 
 ### Create a Subnet
 Here you have to decide on the network size and think about the names of the subnet. The following are really only examples of what it might look like.
 
 ```bash
-az network vnet subnet create -g $RG-NETWORK --vnet-name $k8sVnetName -n $KubernetesMasterSubnet --address-prefixes 10.202.1.0/25
-az network vnet subnet create -g $RG-NETWORK --vnet-name $k8sVnetName -n $KubernetesWorkerSubnet --address-prefixes 10.202.1.128/25
+az network vnet subnet create -g $RG-NETWORK --vnet-name $k8sVnetName -n $KubernetesMasterSubnet --address-prefixes 10.222.1.0/25
+az network vnet subnet create -g $RG-NETWORK --vnet-name $k8sVnetName -n $KubernetesWorkerSubnet --address-prefixes 10.222.1.128/25
 ```
 
 ## Create a Ressource Group
