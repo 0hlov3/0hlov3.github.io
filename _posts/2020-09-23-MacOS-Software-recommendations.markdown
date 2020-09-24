@@ -93,3 +93,6 @@ Clockify is a free time tracker, you can manage your Time by customers, projects
 
 [Clockify](https://clockify.me){:target="_blank"} \
 ![Clockify](/assets/macossoftwarerecomm/time-tracker-dark-screenshot.svg){:height="auto" width="100%"}
+
+#### don't trust me...
+I do not know what I am doing, so I cannot take responsibility for the accuracy of the information provided here

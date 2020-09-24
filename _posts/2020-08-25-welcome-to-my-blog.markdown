@@ -19,3 +19,5 @@ At the moment I mainly deal with
 This blog will be about things that concern me in my free time or in my everyday work.
 Hopefully you will enjoy reading.
 
+#### don't trust me...
+I do not know what I am doing, so I cannot take responsibility for the accuracy of the information provided here

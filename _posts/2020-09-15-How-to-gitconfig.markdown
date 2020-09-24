@@ -152,3 +152,6 @@ So we have added our signing keys to all of our Git Users. Now we have to edit t
 ## What have we done?
 We wrote a .gitconfig that allows us to work with multiple .gitusers, we also prepared a global .gitignore that excludes files that we don't want to push into git by default. And we have global signing of commits enabled.
 Now we are ready to work. =)
+
+#### don't trust me...
+I do not know what I am doing, so I cannot take responsibility for the accuracy of the information provided here

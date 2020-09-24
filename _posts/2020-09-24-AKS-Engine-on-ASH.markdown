@@ -277,3 +277,7 @@ I don;t know if backwards compatibility is a feature, but i think its a bug, tha
 ## Suggestions welcome
 I am trying to do my best, if you have a suggestion for improvement, feel free to write me a message.
 I need good and negative criticism to improve myself, maybe you have a solution for the problem or need help yourself.
+
+
+#### don't trust me...
+I do not know what I am doing, so I cannot take responsibility for the accuracy of the information provided here

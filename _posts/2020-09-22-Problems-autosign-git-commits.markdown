@@ -27,3 +27,6 @@ add the fallowing lines to your bashrc.
 GPG_TTY=$(tty)
 export GPG_TTY
 ```
+
+#### don't trust me...
+I do not know what I am doing, so I cannot take responsibility for the accuracy of the information provided here
