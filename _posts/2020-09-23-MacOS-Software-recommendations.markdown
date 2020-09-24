@@ -1,6 +1,6 @@
 ---
 title:  "MacOS Software i recommend"
-date:   2020-09-22 13:30:00 +0200
+date:   2020-09-23 13:30:00 +0200
 categories: [Mac]
 tags: ["Mac", "MacOS", "iOS"]
 ---

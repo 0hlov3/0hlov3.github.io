@@ -40,7 +40,7 @@ az network vnet subnet create -g $RG-NETWORK --vnet-name $k8sVnetName -n $Kubern
 We have to create a Ressource Group for our deployment of AKS if we don't have already a RG.
 
 ```bash
-az group create -l $LOCATION -g $RG-NAME
+az group create -l $LOCATION -g $RG-NAME-k8s
 ```
 
 ## Create the deployment file
@@ -51,7 +51,7 @@ For that, we need to install an [aks-engine version](https://github.com/Azure/ak
 ```json
 {
     "apiVersion": "vlabs",
-    "location": "",
+    "location": "$LOCATION",
     "properties": {
         "orchestratorProfile": {
             "orchestratorType": "Kubernetes",
@@ -140,7 +140,7 @@ For that, we need to install an [aks-engine version](https://github.com/Azure/ak
 ```json
 {
     "apiVersion": "vlabs",
-    "location": "",
+    "location": "$LOCATION",
     "properties": {
         "orchestratorProfile": {
             "orchestratorType": "Kubernetes",
@@ -231,6 +231,13 @@ For that, we need to install an [aks-engine version](https://github.com/Azure/ak
     }
 }
 ```
+
+### Deployment
+
+```bash
+aks-engine deploy -f --azure-env AzureStackCloud --api-model kubernetes-azurestack.json --location $LOCATION --resource-group $RG-NAME-k8s --client-id $SPID --client-secret $SPPassword --subscription-id $SUBSCRIPTIONID --output-directory $RG-NAME-k8s
+```
+
 ### Hotfix
 
 with the above deploymentfile you can start a deployment with a custom WindowsDNS, but since we have backwords compatibility for Windows 2000 and below, the Active-Directory computer section is limited to 15 chars, so we needed a ugly hotfix.
@@ -257,6 +264,12 @@ EOF
 ```
 
 You need to do it on all master and worker Nodes. Step by Step.
+
+## If your deployment was successful
+If the deployment is successful, all files from the output directory $RG-NAME-k8s must be placed in a secure location, using a keyvault and a storage account with blob storage is a nice place. 
+Cause some files containing secrets, they should be stored safely. Microsoft recommends an extra [virtual instance](https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-kubernetes-aks-engine-deploy-linux?view=azs-2005){:target="_blank"}.
+
+These files from the folder are needed for later changes, upgrades, scaling and other changes of the cluster.
 
 ## Problem or Feature i'm not sure
 I don;t know if backwards compatibility is a feature, but i think its a bug, that an older AD doesn't work with aks-engine, so opened an issue for my problem, cause I don't know how to solve it, concerning the backwards compatibility of the AD.
