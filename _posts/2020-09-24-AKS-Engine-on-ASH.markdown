@@ -1,11 +1,14 @@
 ---
-title:  "AKS on AzureStackHub with AKS-Engine and external AD/DNS intigration"
+title:  "Kubernetes on AzureStackHub with AKS-Engine and external AD/DNS intigration"
 date:   2020-09-24 16:30:00 +0200
 categories: [Azure]
 tags: ["Azure", "AzureStackHub"]
 ---
-We can use AKS Engine to deploy a AKS-Cluster on Azure Stack Hub. So i started to create a Standard AKS-Cluster on Azure Stack Hub, but today we are talking about the ability to use a custom Windows-DNS and Windows-ADS with aks-engine.
+We can use AKS Engine to deploy a Kubernetes-Cluster on Azure Stack Hub. So i started to create a Standard Kubernetes-Cluster on Azure Stack Hub, but today we are talking about the ability to use a custom Windows-DNS and Windows-ADS with aks-engine.
 First of all, we need to create a Virtual Network, two subnets and a ressource group.
+
+## What is AKS Engine
+AKS Engine provides convenient tooling to quickly bootstrap Kubernetes clusters on Azure. By leveraging ARM (Azure Resource Manager), AKS Engine helps you create, destroy and maintain clusters provisioned with basic IaaS resources in Azure. 
 
 ## Check your Quotas
 You  need to check if you have enough space left to deploy your servers, if you choose to deploy 3 Master and 3 Worker Nodes with a VM Size of [Standard_DS2_v2](https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-vm-sizes?view=azs-2005){:target="_blank"}, you should have space for 12 CPUs. 
