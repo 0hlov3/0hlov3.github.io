@@ -1,8 +1,8 @@
 ---
 title:  "Changed the default search settings of searx.maxxblow.de"
 date:   2020-11-11 15:00:00 +0200
-categories: [Mac]
-tags: ["MacOS", "Apple"]
+categories: [Searx]
+tags: ["Searx"]
 ---
 Hi there,
 
