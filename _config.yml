@@ -28,11 +28,6 @@ defaults:
         layout: 'post'
 
 # Build settings
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-
-# Build settings
 destination: _site
 paginate: 10
 permalink: /:year/:title/
