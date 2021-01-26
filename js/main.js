@@ -7,6 +7,7 @@ sitemap:
 $(document).ready(function () {
   {% if site.disable_landing_page != true %}
   $('a.blog-button').click(function (e) {
+    $('.content-wrapper').addClass('content-wrapper-visible')
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
     currentWidth = $('.panel-cover').width()
     if (currentWidth < 960) {
