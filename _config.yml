@@ -1,7 +1,9 @@
 # Site settings
 title: 0hlov3
+descriptionsecondary: >-
+  Public Services
 description: >- # this means to ignore newlines until "baseurl:"
-  Working as DevOps Engineer with a focus on Azure and GCP.
+  Working as DevOps Engineer with a focus on Azure and GCP
 url: "https://maxxblow.de"
 baseurl: "" # the subpath of your site, e.g. /blog
 profilepic: '/images/0hlov3-avatar.jpg'
@@ -18,6 +20,8 @@ author:
   stackoverflow:
     username: 0hlov3
     userid: 12966958
+  searx_domain: searx.maxxblow.de
+  privatebin_domain: pb.maxxblow.de
 
 defaults:
   -

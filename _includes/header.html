@@ -130,7 +130,35 @@
         </nav>
 
       </div>
-
+      <div>
+        <div>
+          <hr class="panel-cover__divider">
+          <p class="panel-cover__description">{{ site.descriptionsecondary }}</p>
+          <hr class="panel-cover__divider panel-cover__divider--secondary">
+        </div>
+        <div class="navigation-wrapper">
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+            {% if site.author.searx_domain %}
+              <!-- searx -->
+              <li class="navigation__item">
+                <a rel="me" href="https://{{ site.author.searx_domain }}" title="{{ site.author.searx_domain }}" target="_blank">
+                  <i class="icon"><img src="/images/logos/searx_logo.png" style="height:24px"></img></i>
+                  <span class="label">Searx</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if site.author.privatebin_domain %}
+              <!-- privatebin -->
+              <li class="navigation__item">
+                <a rel="me" href="https://{{ site.author.privatebin_domain }}" title="{{ site.author.privatebin_domain }}" target="_blank">
+                  <i class="icon"><img src="/images/logos/privatebin-logo.png" style="height:24px"></img></i>
+                  <span class="label">Searx</span>
+                </a>
+              </li>
+            {% endif %}
+        </div>
+      </div>
     </div>
 
   </div>
