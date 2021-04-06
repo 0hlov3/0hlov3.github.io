@@ -50,6 +50,8 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
+plugins: ['jekyll-paginate']
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

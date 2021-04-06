@@ -5,5 +5,6 @@ _site/*
 .jekyll-metadata
 *.sublime-project
 *.sublime-workspace
+Gemfile.lock
 .DS_Store
 vendor
