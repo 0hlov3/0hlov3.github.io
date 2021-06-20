@@ -20,8 +20,8 @@ author:
   stackoverflow:
     username: 0hlov3
     userid: 12966958
-  searx_domain: searx.maxxblow.de
-  privatebin_domain: pb.maxxblow.de
+  searx_domain: sx.fedi.tech
+  privatebin_domain: pb.fedi.tech
 
 defaults:
   -
