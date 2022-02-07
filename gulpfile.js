@@ -52,7 +52,7 @@ gulp.task('sass', async function() {
 /*
 * Compile fonts
 */
-gulp.task('fonts', function() {
+gulp.task('fonts', async function() {
 	gulp.src('src/fonts/**/*.{ttf,woff,woff2}')
 		.pipe(plumber())
 		.pipe(gulp.dest('assets/fonts/'));
