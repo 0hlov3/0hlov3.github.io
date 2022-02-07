@@ -14,12 +14,7 @@ instagram_username: 6f6c6166
 facebook_username: 0hlov3
 linkedin_username: 0hlov3
 github_username:  0hlov3
-medium_usernam: 0hlov3
-
-
-
-
-
+medium_username: 0hlov3
 # gplus_username:  lorem_ipsum
 
 exclude: ['package.json', 'src' , 'node_modules']
