@@ -17,5 +17,8 @@ github_username:  0hlov3
 # medium_username: 0hlov3
 medium_url: 0hlov3.medium.com
 # gplus_username:  lorem_ipsum
+## FediVerse
+mastodon_url: "mstdn.social/@0hlov3"
+pixelfed_url: "pixelfed.social/Ohlov3"
 
 exclude: ['package.json', 'src' , 'node_modules']
