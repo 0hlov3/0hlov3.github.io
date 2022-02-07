@@ -99,6 +99,17 @@
       line-height: 30px;
     }
   }
+  img {
+    height: 30px;
+    &:hover {
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+    }
+    &:active {
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+    }
+  }
 }
 
 .down {
