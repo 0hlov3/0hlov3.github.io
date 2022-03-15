@@ -36,6 +36,9 @@
         {% if site.pixelfed_url %}
         <a rel="me" aria-label="My Pixelfed" target="_blank" href="https://{{ site.pixelfed_url }}"><i class="icon fa" aria-hidden="true"><img class="invertable-image" src="{{ '/assets/img/pixelfed.png' }}" ></img></i></a>
         {% endif %}
+        {% if site.matrix_url %}
+        <a rel="me" aria-label="My Matrix Synapse" target="_blank" href="https://{{ site.matrix_url }}"><i class="icon fa" aria-hidden="true"><img class="invertable-image" src="{{ '/assets/img/matrix-logo-white.png' }}" ></img></i></a>
+        {% endif %}
       </div>
       <div class="header-links">
         <!-- <a class="link" href="#about" data-scroll>About Me</a> -->

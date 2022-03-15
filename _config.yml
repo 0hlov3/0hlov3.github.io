@@ -20,5 +20,6 @@ medium_url: 0hlov3.medium.com
 ## FediVerse
 mastodon_url: "mstdn.social/@0hlov3"
 pixelfed_url: "pixelfed.social/Ohlov3"
+matrix_url: "matrix.to/#/@0hlov3:matrix.fedi.tech"
 
 exclude: ['package.json', 'src' , 'node_modules']
