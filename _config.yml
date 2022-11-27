@@ -10,8 +10,8 @@ user_description: I'm a DevOps Engineer from Germany...
 user_title: DevOps Engineer
 email: 0hlov3@protonmail.com
 twitter_username: 0hlov3s
-instagram_username: 0hlov3s
-facebook_username: 0hlov3
+#instagram_username: 0hlov3s
+#facebook_username: 0hlov3
 linkedin_username: 0hlov3
 github_username:  0hlov3
 # medium_username: 0hlov3
@@ -19,8 +19,8 @@ medium_url: 0hlov3.medium.com
 # gplus_username:  lorem_ipsum
 ## FediVerse
 mastodon_url: "chaos.social/@0hlov3"
-gotosocial_url: "gts.fedi.tech/@0hlov3"
+gotosocial_url: "gts.fsociety.social/@0hlov3"
 pixelfed_url: "pixelfed.social/Ohlov3"
-matrix_url: "matrix.to/#/@0hlov3:matrix.fedi.tech"
+matrix_url: "matrix.to/#/@0hlov3:fsociety.social"
 
 exclude: ['package.json', 'src' , 'node_modules']
