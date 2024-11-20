@@ -9,13 +9,13 @@ username: 0hlov3
 user_description: I'm a DevOps Engineer from Germany...
 user_title: Senior DevOps Engineer & Kubernetes Expert
 email: contact@schoenwald.aero
-twitter_username: 0hlov3s
-linkedin_username: 0laf
+#twitter_username: 0hlov3s
+linkedin_username: olafschoenwald
 github_username:  0hlov3
 medium_url: blog.schoenwald.aero
 ## FediVerse
 mastodon_url: "chaos.social/@0hlov3"
-gotosocial_url: "gts.fsociety.social/@0hlov3"
+#gotosocial_url: "gts.fsociety.social/@0hlov3"
 pixelfed_url: "pixelfed.social/Ohlov3"
 matrix_url: "matrix.to/#/@0hlov3:fsociety.social"
 
