@@ -1,3 +1,47 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://schoenwald.aero/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '0hlov3s Blog'
+theme = "hugo-profolio"
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Resume'
+pageRef = '/resume'
+weight = 40
+
+[params]
+title = "0hlov3"
+subtitle = "Senior DevOps Engineer & Kubestronaut"
+author = "Olaf"
+SelfPortrait = "olaf-as-anime.png"
+
+[params.userinfo]
+user_description = "DevOps Engineer based in Germany with expertise in automation, cloud solutions, and scalable systems engineering."
+user_design = "Proficient in designing scalable and reliable Infrastructure as Code solutions using Terraform, Packer, and Ansible."
+user_code = "Experienced in writing efficient and maintainable code, primarily in Bash and Go, with strong familiarity in Python."
+user_tools = "Well-versed in a wide array of tools, including Git, Linux, Docker, Kubernetes, Helm, and Argo, to streamline workflows and enhance productivity."
+
+[params.social]
+email = "contact@schoenwald.aero"
+#twitter: 0hlov3s
+linkedin = "https://www.linkedin.com/in/olafschoenwald/"
+matrix_url = "matrix.to/#/@0hlov3:fsociety.social"
+medium = "https://blog.schoenwald.aero/"
+mastodon = "https://gts.privatetrace.io/@0hlov3"
+stackoverflow = "https://stackoverflow.com/users/12966958/0hlov3"
+github = "https://github.com/0hlov3"
+gitlab = "https://gitlab.com/0hlov3"
+
+[[params.resume]]
+
+[params.footer]
+fediRelMe = ["https://mstdn.social/@0hlov3","https://chaos.social/@0hlov3","https://gts.privatetrace.io/@0hlov3"]
