@@ -1,0 +1,3 @@
+[submodule "themes/hugo-profolio"]
+	path = themes/hugo-profolio
+	url = git@github.com:0hlov3/hugo-theme-hugoprofolio.git
