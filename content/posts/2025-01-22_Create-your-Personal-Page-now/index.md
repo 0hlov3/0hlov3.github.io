@@ -3,23 +3,26 @@ title = ' Create you Personal Page now'
 subtitle = 'and host it for free!'
 date = 2025-01-20T00:01:00-00:00
 draft = false
-image = "b836409030712d9d-Screenshot-20250121-233914.png"
+image = "hugo-preview.jpg"
 tags = ['Hugo','GitHubPages','StaticSiteGenerators']
 +++
 
+![hugo-preview.jpg](<hugo-preview.jpg>)
+
 Hi there! If you work in IT, you should consider creating a personal webpage. A personal webpage can serve as a professional portfolio, a digital business card, or even a space to share your thoughts and projects. In this article, we’ll explore static site generators, tools that make it easy to create fast, secure, and scalable websites.
 
-There are countless static site generators to choose from, such as [Jekylll](<https://jekyllrb.com/> "Jekylll"), [Docusaurus](<https://docusaurus.io/>), [Gatsby](<https://www.gatsbyjs.com/> "Gatsby"), and [Hugo](<https://gohugo.io/> "Hugo"). For simplicity and efficiency, we’ll focus on Hugo in this article.
+There are countless static site generators to choose from, such as 
+{{< newtablink "https://jekyllrb.com/" >}}Jekyll{{< /newtablink >}}, {{< newtablink "https://docusaurus.io/" >}}Docusaurus{{< /newtablink >}}, {{< newtablink "https://www.gatsbyjs.com/" >}}Gatsby{{< /newtablink >}} and {{< newtablink "<https://gohugo.io/" >}}Hugo{{< /newtablink >}}. For simplicity and efficiency, we’ll focus on Hugo in this article.
 
 To make things even better, we’ll use GitHub to host your website for free. Sounds exciting, right? Let’s get started!
 
 ### Step 1: Create a GitHub Account
 
-To use GitHub’s free hosting capabilities, the first step is to create a GitHub account. Head to [GitHub](<https://github.com>) and sign up for a new account. Verify your email address and choose an appropriate username. Once your account is set up, you’ll need to create a repository with the name `<username>.github.io`. For example, if your GitHub username is `alice`, your repository should be named `alice.github.io`. This naming convention is essential, as it ensures GitHub recognizes your repository as a personal website.
+To use GitHub’s free hosting capabilities, the first step is to create a GitHub account. Head to {{< newtablink "https://github.com/" >}}GitHub{{< /newtablink >}} and sign up for a new account. Verify your email address and choose an appropriate username. Once your account is set up, you’ll need to create a repository with the name `<username>.github.io`. For example, if your GitHub username is `alice`, your repository should be named `alice.github.io`. This naming convention is essential, as it ensures GitHub recognizes your repository as a personal website.
 
 For enhanced security, enable two-factor authentication (2FA). 2FA requires you to enter a generated code from an authenticator app or SMS when logging in, providing an extra layer of identity verification. Using an authenticator app like Authy or Google Authenticator is more secure than SMS-based 2FA. This small step adds significant protection to your account.
 
-If you don’t have Git installed, refer to the [Git installation guide](<https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>).
+If you don’t have Git installed, refer to the {{< newtablink "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" >}}Git installation guide{{< /newtablink >}}.
 
 ### Step 2: Configure GitHub Pages
 
@@ -41,11 +44,11 @@ Here’s how to configure it manually:
 
 ![Screenshot_20250121_231652](<b836409030712d9d-Screenshot-20250121-233914.png>)
 
-Here is an initial website created from the repository's [README.md](<http://README.md>).
+Here is an initial website created from the repository's README.md.
 
 ![Screenshot_20250121_231734.png](<f7f1246d31b25623-Screenshot_20250121_231734.png>)
 
-It may take a few minutes for your site to be live at [https://yourusername.github.io](<https://yourusername.github.io>). Congratulations, you’re now hosting on GitHub Pages!
+It may take a few minutes for your site to be live at {{< newtablink "https://yourusername.github.io" >}}https://yourusername.github.io{{< /newtablink >}}. Congratulations, you’re now hosting on GitHub Pages!
 
 ### Step 3: Clone Your Repository
 
@@ -57,7 +60,7 @@ git clone https://github.com/<username>/<username>.github.io
 
 ### Step 4: Install Hugo
 
-Before creating your site, install Hugo on your machine. Hugo is a lightweight and fast static site generator. Follow the [Hugo installation guide](<https://gohugo.io/getting-started/installing/>) for your operating system to get it up and running.
+Before creating your site, install Hugo on your machine. Hugo is a lightweight and fast static site generator. Follow the {{< newtablink "https://gohugo.io/getting-started/installing/" >}}Hugo installation guide{{< /newtablink >}} for your operating system to get it up and running.
 
 ### Step 5: Create a Hugo Site
 
@@ -83,11 +86,11 @@ Your website is now set up, but it’s empty. Let’s add some content! Start by
 hugo new posts/my-first-post.md
 ```
 
-Open the file and write your content in [Markdown](<https://www.markdownguide.org/cheat-sheet/> "Markdown") format.
+Open the file and write your content in {{< newtablink "https://www.markdownguide.org/cheat-sheet/" >}}Markdown{{< /newtablink >}} format.
 
 ### Step 7: Choose a Theme
 
-Hugo supports a variety of themes to style your site. Visit the [Hugo Themes](<https://themes.gohugo.io/>) page to find one you like. Alternatively, you can create your own theme if you prefer something more customized. Download and apply your chosen theme by following the theme’s installation instructions.
+Hugo supports a variety of themes to style your site. Visit the {{< newtablink "https://themes.gohugo.io/" >}}Hugo Themes{{< /newtablink >}} page to find one you like. Alternatively, you can create your own theme if you prefer something more customized. Download and apply your chosen theme by following the theme’s installation instructions.
 
 In my case, I’ve opted to use a theme I’ve created myself, called `hugo-profolio`. It’s still a work in progress, and I’m actively looking for feedback and help to improve its design, colors, and documentation. If you’re interested in contributing or sharing ideas, I’d love to hear from you!
 
@@ -117,7 +120,7 @@ To preview your site locally, run:
 hugo server
 ```
 
-Visit `http://localhost:1313` in your browser to view your site.
+Visit {{< newtablink "http://localhost:1313" >}}Markdown{{< /newtablink >}} in your browser to view your site.
 
 ### Step 9: Deploy to GitHub Pages
 
@@ -132,11 +135,11 @@ git commit -m "Initial commit"
 git push origin main
 ```
 
-Your site will be live at [https://yourusername.github.io](<https://yourusername.github.io>) shortly after pushing.
+Your site will be live at {{< newtablink "https://yourusername.github.io" >}}https://yourusername.github.io{{< /newtablink >}} shortly after pushing.
 
 #### Option 2: Deploy with GitHub Actions
 
-Automate your deployments using a [GitHub Actions workflow](<https://gohugo.io/hosting-and-deployment/hosting-on-github/> "GitHub Actions workflow"). Create a file at `.github/workflows/hugo.yaml` with the following content:
+Automate your deployments using a {{< newtablink "https://gohugo.io/hosting-and-deployment/hosting-on-github/" >}}GitHub Actions workflow{{< /newtablink >}}. Create a file at `.github/workflows/hugo.yaml` with the following content:
 
 ```shell
 mkdir -p .github/workflows
@@ -253,13 +256,10 @@ So why wait? Start building your webpage today, and let it grow alongside your c
 
 ## Helpful Links:
 
-- [https://gohugo.io/hosting-and-deployment/hosting-on-github/](<https://gohugo.io/hosting-and-deployment/hosting-on-github/>)
-
-- [https://gohugo.io/installation/](<https://gohugo.io/installation/>)
-
-- [https://pages.github.com/](<https://pages.github.com/>)
-
-- [https://docs.github.com/en/actions/about-github-actions/understanding-github-actions](<https://docs.github.com/en/actions/about-github-actions/understanding-github-actions>)
+- {{< newtablink "https://gohugo.io/hosting-and-deployment/hosting-on-github/" >}}https://gohugo.io/hosting-and-deployment/hosting-on-github/{{< /newtablink >}}
+- {{< newtablink "https://gohugo.io/installation/](<https://gohugo.io/installation/" >}}https://gohugo.io/installation/](<https://gohugo.io/installation/{{< /newtablink >}}
+- {{< newtablink "https://pages.github.com/" >}}https://pages.github.com/{{< /newtablink >}}
+- {{< newtablink "https://docs.github.com/en/actions/about-github-actions/understanding-github-actions" >}}https://docs.github.com/en/actions/about-github-actions/understanding-github-actions{{< /newtablink >}}
 
 # Don‘t trust me
 
