@@ -1,6 +1,6 @@
 +++
-title = ' Create you Personal Page now'
-subtitle = 'and host it for free!'
+title = 'Create Your Personal Page Today'
+subtitle = 'Host It for Free on GitHub Pages!'
 date = 2025-01-20T00:01:00-00:00
 draft = false
 image = "hugo-preview.jpg"
