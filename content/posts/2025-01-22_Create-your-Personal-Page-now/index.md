@@ -42,7 +42,7 @@ Here’s how to configure it manually:
 
 4. Click "Save."
 
-![Screenshot_20250121_231652](<b836409030712d9d-Screenshot-20250121-233914.png>)
+![Screenshot_20250121_231652](<b836409030712d9d-Screenshot-20250121_231652.png>)
 
 Here is an initial website created from the repository's README.md.
 
