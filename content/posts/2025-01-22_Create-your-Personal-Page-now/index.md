@@ -100,7 +100,7 @@ To add my custom theme to your project, use the following command:
 git submodule add --depth=1 git@github.com:0hlov3/hugo-theme-hugoprofolio.git themes/hugo-profolio
 ```
 
-Once added, configure your theme in the `config.toml` file. Here’s an example configuration:
+Once added, configure your theme in the `hugo.toml` file. Here’s an example configuration:
 
 ```toml
 # If you don’t have an external domain applied
