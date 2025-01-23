@@ -120,7 +120,7 @@ To preview your site locally, run:
 hugo server
 ```
 
-Visit {{< newtablink "http://localhost:1313" >}}Markdown{{< /newtablink >}} in your browser to view your site.
+Visit {{< newtablink "http://localhost:1313" >}}http://localhost:1313{{< /newtablink >}} in your browser to view your site.
 
 ### Step 9: Deploy to GitHub Pages
 
