@@ -23,7 +23,7 @@ I aim to contribute to transformative projects, such as those in the healthcare 
 ### Senior DevOps Engineer
 **May 2020 – Present**
 
-As a Senior DevOps Engineer at, I design, implement, and maintain scalable and secure infrastructure solutions. My role focuses on containerization, cloud technologies, and DevOps practices to deliver innovative solutions for both on-premises and cloud-native environments.
+As a Senior DevOps Engineer, I design, implement, and maintain scalable and secure infrastructure solutions. My role focuses on containerization, cloud technologies, and DevOps practices to deliver innovative solutions for both on-premises and cloud-native environments.
 
 Key Responsibilities and Achievements
 - Kubernetes and Cloud Infrastructure:
