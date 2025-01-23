@@ -9,7 +9,7 @@ about = "I am a DevOps Engineer with expertise in building scalable infrastructu
 skills = ["Kubernetes", "Azure", "Go (Golang)", "ArgoCD", "Terraform", "Ansible", "Helm"]
 languages = ["German", "English"]
 certificates = ["CKA", "CKAD", "CKS", "KCNA", "KCSA"]
-hobbies = ["Hiking", "Reading", "Jogging"]
+hobbies = ["Hiking", "Jogging", "Archery", "Exploring technologies", "Hosting open-source projects"]
 tags = ["Resume", "DevOps", "Cloud", "Kubernetes"]
 +++
 
