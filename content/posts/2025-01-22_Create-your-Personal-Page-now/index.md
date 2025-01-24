@@ -261,7 +261,7 @@ So why wait? Start building your webpage today, and let it grow alongside your c
 - {{< newtablink "https://pages.github.com/" >}}https://pages.github.com/{{< /newtablink >}}
 - {{< newtablink "https://docs.github.com/en/actions/about-github-actions/understanding-github-actions" >}}https://docs.github.com/en/actions/about-github-actions/understanding-github-actions{{< /newtablink >}}
 
-# Don‘t trust me
+## Don‘t trust me
 
 The author is not responsible for any errors or damages resulting from the use of this information.
 
