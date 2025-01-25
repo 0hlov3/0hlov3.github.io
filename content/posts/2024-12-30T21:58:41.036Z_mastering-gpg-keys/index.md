@@ -1,32 +1,29 @@
 ---
-title: "Mastering GPG KeysMastering GPG Keys"
+title: "Mastering GPG KeysMastering GPG Keys"
 author: "0hlov3"
 date: 2024-12-30T21:58:41.036Z
 lastmod: 2025-01-24T23:27:37Z
 
 description: ""
-subtitle: "Securely Managing your Digital Identity with KDE Wallet"
+subtitle: "Securely Managing your Digital Identity with KDE Wallet"
 
 image: "1.png" 
 images:
  - "1.png"
 
-aliases:
-  - "/https://medium.com/@0hlov3/mastering-gpg-keys-755ebb8d7fb4"
+tags: ['Digital Security','Gpg','Kde Wallet','Open Source','Encryption']
 
 ---
-
-### Mastering GPG Keys
-
-### Securely Managing your Digital Identity with KDE Wallet
-
 ![](1.png)
 
 In the digital age, safeguarding your data and verifying your identity online are more critical than ever. GNU Privacy Guard (GPG) offers a robust solution for these needs through encryption and digital signing. This article explores the foundational concepts of GPG keys, their practical applications, and how to enhance their usability by securely storing passphrases in KDE Wallet.
 
 ### What Are GPG Keys?
 
-GPG, or [GNU Privacy Guard](https://gnupg.org/), is an implementation of the [OpenPGP standard](https://www.openpgp.org/), designed to provide encryption and digital signing capabilities. Developed as a free and open-source alternative to [PGP (Pretty Good Privacy)](https://de.wikipedia.org/wiki/Pretty_Good_Privacy), GPG enables users to encrypt sensitive data, verify the integrity of files, and authenticate their digital identities.
+GPG, or {{< newtablink \"https://gnupg.org/\" >}}GNU Privacy Guard{{< /newtablink >}}, is an implementation of the
+{{< newtablink \"https://www.openpgp.org/\" >}}OpenPGP standard{{< /newtablink >}}, designed to provide encryption and 
+digital signing capabilities. Developed as a free and open-source alternative to {{< newtablink \"https://de.wikipedia.org/wiki/Pretty_Good_Privacy\" >}}PGP (Pretty Good Privacy){{< /newtablink >}}, GPG 
+enables users to encrypt sensitive data, verify the integrity of files, and authenticate their digital identities.
 
 At its core, GPG employs public-key cryptography, where a key pair — comprising a public key and a private key — is used. The public key can be freely shared to enable others to encrypt messages or verify signatures, while the private key remains confidential and is used to decrypt data or sign digital communications.
 
@@ -92,13 +89,13 @@ For other operating systems, download the latest version from the [GPG official 
 
 If you are using GPG version 2.1.17 or greater, run the following command.
 
-```css
+```bash
 gpg --full-generate-key
 ```
 
 For older versions, use
 
-```vbnet
+```bash
 gpg --default-new-key-algo rsa4096 --gen-key
 ```
 
@@ -117,7 +114,7 @@ gpg --default-new-key-algo rsa4096 --gen-key
 
 Here’s what the process might look like in your terminal:
 
-```csharp
+```bash
 $ gpg --full-generate-key
 Please select what kind of key you want:
    (1) RSA and RSA
@@ -164,7 +161,7 @@ generator a better chance to gain enough entropy.
 
 Once the process completes, your key pair will be ready for use. You can list your keys with
 
-```css
+```bash
 gpg --list-keys
 ```
 
@@ -176,7 +173,7 @@ Signing Git commits with GPG keys ensures that your commits are verified and tru
 
 Use the following command to list your keys and identify the key ID
 
-```perl
+```bash
 gpg --list-secret-keys --keyid-format=long
 ```
 
@@ -184,7 +181,7 @@ The key ID is a long string, such as `ABCD1234EF567890`.
 
 **Set Up Git to use your Information**
 
-```lua
+```bash
 git config --global user.email johndoe@example.com
 git config --global user.name John
 ```
@@ -193,7 +190,7 @@ git config --global user.name John
 
 Configure Git globally to use your GPG key
 
-```lua
+```bash
 git config --global user.signingkey <key-id>
 ```
 
@@ -201,7 +198,7 @@ git config --global user.signingkey <key-id>
 
 To enable commit signing globally
 
-```csharp
+```bash
 git config --global commit.gpgsign true
 ```
 
@@ -211,7 +208,7 @@ To verify your commits against your Git repository, you need to add your public 
 
 Export your public GPG key in an ASCII-armored format by running the following command in your terminal:
 
-```css
+```bash
 gpg --armor --export <key-id>
 ```
 
@@ -227,7 +224,7 @@ By completing these steps, your commits signed with the corresponding GPG key wi
 
 Add changes to your Git repository and commit them with a signature
 
-```sql
+```bash
 git add .
 git commit -S -m "Your commit message"
 ```
@@ -238,7 +235,7 @@ The `-S` flag ensures the commit is signed.
 
 To verify a signed commit
 
-```lua
+```bash
 git log --show-signature
 ```
 
@@ -246,7 +243,7 @@ git log --show-signature
 
 Here’s an example workflow
 
-```yaml
+```bash
 $ gpg --list-secret-keys --keyid-format=long
 /home/johndoe/.gnupg/secring.gpg
 ---------------------------------
@@ -277,7 +274,7 @@ To back up your keys, export both your public and private keys. Use the followin
 
 **Export Public Keys**
 
-```css
+```bash
 gpg -a --export > mypubkeys.asc
 ```
 
@@ -285,7 +282,7 @@ This creates a file named `mypubkeys.asc` containing your public keys in an ASCI
 
 **Export Private Keys**
 
-```css
+```bash
 gpg -a --export-secret-keys > myprivatekeys.asc
 ```
 
@@ -295,7 +292,7 @@ This creates a file named `myprivatekeys.asc` containing your private keys in an
 
 Optionally, export the trust database to retain the trust levels you’ve assigned to other keys
 
-```cpp
+```bash
 gpg --export-ownertrust > otrust.txt
 ```
 
@@ -305,14 +302,14 @@ To restore your keys and trust database on a new system, follow these steps
 
 **Import Public and Private Keys**
 
-```cpp
+```bash
 gpg --import mypubkeys.asc
 gpg --import myprivatekeys.asc
 ```
 
 **Import the Trust Database**
 
-```cpp
+```bash
 gpg --import-ownertrust otrust.txt
 ```
 
@@ -401,7 +398,7 @@ cat /dev/random > /dev/null
 
 Alternatively, install an entropy-generating daemon like `haveged`
 
-```sql
+```bash
 sudo pacman -S --needed haveged
 sudo systemctl start haveged
 ```
@@ -414,13 +411,13 @@ sudo systemctl start haveged
 **Issue:** Git cannot find the GPG key for signing commits.  
 **Solution:** Ensure the signing key is correctly configured in Git
 
-```lua
+```bash
 git config --global user.signingkey <key-id>
 ```
 
 Verify the key’s presence with
 
-```css
+```bash
 gpg --list-keys
 ```
 
@@ -444,14 +441,14 @@ Verify that the KDE Wallet Secret Service API is enabled.
 **Checking GPG Logs**  
 Enable verbose logging to diagnose issues
 
-```css
+```bash
 gpg --verbose --list-keys
 ```
 
 **Testing GPG Agent**  
 Verify the GPG agent is running and responsive
 
-```sql
+```bash
 gpg-connect-agent /bye
 gpg-agent --daemon
 ```
@@ -459,7 +456,7 @@ gpg-agent --daemon
 **KDE Wallet Logs**  
 Check KDE Wallet logs for errors
 
-```css
+```bash
 journalctl --user-unit kwalletd6.service
 ```
 
@@ -483,12 +480,12 @@ Adopting these practices not only strengthens your security posture but also emp
 
 ### Sources
 
-1. [GNU Privacy Guard (GPG) Official Website](https://gnupg.org/)
-2. [Arch Linux Wiki: KDE Wallet](https://wiki.archlinux.org/title/KDE_Wallet)
-3. [Red Hat Knowledgebase: GPG Key Configuration](https://access.redhat.com/solutions/2115511)
-4. [Git Documentation: Signing Commits with GPG](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
-5. GPG Manual: Command-Line Options
-6. [Ubuntu: Installing and Configuring GPG](https://help.ubuntu.com/community/GnuPrivacyGuardHowto)
+1. {{< newtablink \"https://gnupg.org/\" >}}GNU Privacy Guard (GPG) Official Website{{< /newtablink >}}
+2. {{< newtablink \"https://wiki.archlinux.org/title/KDE_Wallet\" >}}Arch Linux Wiki: KDE Wallet{{< /newtablink >}}
+3. {{< newtablink \"https://access.redhat.com/solutions/2115511\" >}}Red Hat Knowledgebase: GPG Key Configuration{{< /newtablink >}}
+4. {{< newtablink \"https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work\" >}}Git Documentation: Signing Commits with GPG{{< /newtablink >}}
+5. {{< newtablink \"https://help.ubuntu.com/community/GnuPrivacyGuardHowto\" >}}Ubuntu: Installing and Configuring GPG{{< /newtablink >}}
+6. GPG Manual: Command-Line Options
 
 ### Don‘t trust me
 
