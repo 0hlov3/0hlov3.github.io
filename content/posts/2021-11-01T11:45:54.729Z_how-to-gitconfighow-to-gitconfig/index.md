@@ -10,6 +10,8 @@ subtitle: "A practical Guide to managing multiple git Users"
 image: "1.jpeg" 
 images:
  - "1.jpeg"
+
+tags: ['Git','GitConfig','VersionControl','GPG','GitIgnore','DevOps','SoftwareDevelopment','CodingTips','VersionControlBestPractices','GitUsers']
 ---
 {{< figure src="1.jpeg" caption="Photo by {{< newtablink \"https://unsplash.com/@synkevych?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Roman Synkevych{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/black-and-white-penguin-toy-wX2L8L-fGeA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="A figurine of an oktokat in the center, in the background a laptop with the main page of the GitHub open." >}}
 

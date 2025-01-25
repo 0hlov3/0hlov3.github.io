@@ -11,6 +11,7 @@ image: "1.jpeg"
 images:
  - "1.jpeg"
 
+tags: ['Git','GPG','macOS','Error Fix','Git Configuration','GPG Agent','Troubleshooting']
 ---
 {{< figure src="1.jpeg" caption="Photo by {{< newtablink \"https://unsplash.com/@yancymin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Yancy Min{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/a-close-up-of-a-text-description-on-a-computer-screen-842ofHC6MaI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="a close up of a text description on a computer screen" >}}
 

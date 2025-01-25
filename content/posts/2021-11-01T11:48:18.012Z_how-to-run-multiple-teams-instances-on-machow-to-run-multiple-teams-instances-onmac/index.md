@@ -10,6 +10,8 @@ subtitle: ""
 image: "1.jpeg" 
 images:
  - "1.jpeg"
+
+tags: ['Microsoft Teams']
 ---
 {{< figure src="1.jpeg" caption="Photo by {{< newtablink \"https://unsplash.com/@dkfra19?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Dimitri Karastelev{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/iphone-screen-with-icons-on-screen-1Y-hk45tyMs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="iphone screen with icons on screen" >}}
 
