@@ -1,5 +1,5 @@
 ---
-title: "Mastering GPG KeysMastering GPG Keys"
+title: "Mastering GPG Keys"
 author: "0hlov3"
 date: 2024-12-30T21:58:41.036Z
 lastmod: 2025-01-24T23:27:37Z
