@@ -15,14 +15,25 @@ images:
 
 Hi there,
 
-i’ve been looking for a long time for a solution to run 2 widescreen monitors with my Macbook Pro, but i couldn’t figure it out from the net, so i bought tons of USB-C to HDMI adapters, until i found a USB-C to DisplayPort adapter to do the conversion.
+After a long search for a way to run two widescreen monitors with my MacBook Pro, I finally found a setup that works. 
+I struggled to figure it out using online guides, so I ended up buying several USB-C to HDMI adapters that didn’t solve 
+the problem. Eventually, I discovered that a USB-C to DisplayPort adapter was the key.
 
-I ordered the “KabelDirekt — USB C to DisplayPort DP “ adapter from Amazon, I connected it to my Samsung CRG9, so my Samsung monitor now runs with the desired resolution of 5,120 x 1,440 pixels, furthermore I connected an LG Ultrawide monitor with the “UGREEN USB C Hub” to my MacBook Pro, so it runs with the full resolution of 3440 x 1440 pixels.
+Here’s my current setup:
+1. I ordered the KabelDirekt USB-C to DisplayPort Adapter from Amazon and connected it to my Samsung CRG9 monitor. This allows the Samsung to run at its full resolution of 5,120 x 1,440 pixels, and it even supports HDR.
+2. For my second monitor, an LG Ultrawide, I used the UGREEN USB-C Hub, which enables it to run at its full resolution of 3,440 x 1,440 pixels.
 
-I am now very happy with this solution, furthermore the Samsung even supports HDR.
+This setup has been a game changer for me, and I’m very happy with the results.
 
-This article contains suggestions for products, this is not an advertisement for the products.
+As of January 25, 2025, I’ve also upgraded my cable for even better compatibility and support for full resolution. 
+I’m now using the UGREEN USB-C to DisplayPort 1.4 Cable, which supports up to 8K at 60Hz, 4K at 240Hz, HDR, and VRR.
 
-#### don’t trust me…
+#### A Few Notes:
+- This post contains product suggestions based on my personal experience. It is not sponsored or an advertisement.
+- Please note that I am not an expert, so I cannot guarantee the accuracy of the information provided here. What worked for me may not work for everyone.
 
-I do not know what I am doing, so I cannot take responsibility for the accuracy of the information provided here
+## Don‘t trust me
+
+The author is not responsible for any errors or damages resulting from the use of this information.
+
+If you have any questions or suggestions for improvement, please feel free to reach out.
