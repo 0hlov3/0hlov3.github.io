@@ -18,7 +18,7 @@ tags: ['Digital Security','Gpg','Kde Wallet','Open Source','Encryption']
 
 In the digital age, safeguarding your data and verifying your identity online are more critical than ever. GNU Privacy Guard (GPG) offers a robust solution for these needs through encryption and digital signing. This article explores the foundational concepts of GPG keys, their practical applications, and how to enhance their usability by securely storing passphrases in KDE Wallet.
 
-### What Are GPG Keys?
+### What Are GPG Keys?
 
 GPG, or {{< newtablink \"https://gnupg.org/\" >}}GNU Privacy Guard{{< /newtablink >}}, is an implementation of the
 {{< newtablink \"https://www.openpgp.org/\" >}}OpenPGP standard{{< /newtablink >}}, designed to provide encryption and 
@@ -27,7 +27,7 @@ enables users to encrypt sensitive data, verify the integrity of files, and auth
 
 At its core, GPG employs public-key cryptography, where a key pair — comprising a public key and a private key — is used. The public key can be freely shared to enable others to encrypt messages or verify signatures, while the private key remains confidential and is used to decrypt data or sign digital communications.
 
-### Why Use GPG Keys?
+### Why Use GPG Keys?
 
 The versatility of GPG keys makes them indispensable for a wide range of security tasks:
 
@@ -45,13 +45,13 @@ KDE Wallet is a password management system built into the KDE Plasma desktop env
 
 This integration not only enhances usability but also ensures that sensitive passphrases are encrypted and stored safely, aligning with best practices for digital security.
 
-### What Are GPG Keys and Why Should You Use Them?
+### What Are GPG Keys and Why Should You Use Them?
 
 At the heart of GPG is public-key cryptography, a method that relies on two distinct yet mathematically linked keys: a public key and a private key. The public key is openly shared and allows others to encrypt messages or verify digital signatures. Conversely, the private key is kept secret by its owner and is used to decrypt received messages or create digital signatures.
 
 This dual-key mechanism ensures that encrypted messages can only be decrypted by the intended recipient and that digital signatures provide undeniable proof of authenticity. Public-key cryptography eliminates the need to share sensitive keys over insecure channels, making it a cornerstone of modern security practices.
 
-#### Benefits of Using GPG Keys for Security and Identity
+#### Benefits of Using GPG Keys for Security and Identity
 
 GPG keys offer several advantages for individuals and organizations:
 
@@ -61,7 +61,7 @@ GPG keys offer several advantages for individuals and organizations:
 
 These features make GPG a powerful tool for safeguarding privacy and maintaining trust in digital communications.
 
-#### Real-World Applications of GPG Keys
+#### Real-World Applications of GPG Keys
 
 One of the most notable uses of GPG keys is in software development, particularly for signing Git commits. By signing commits with a GPG key, developers can:
 
@@ -71,11 +71,11 @@ One of the most notable uses of GPG keys is in software development, particularl
 
 Beyond Git, GPG keys are widely used for encrypting emails, securing files, and even verifying software packages. Their versatility and robust security make them an essential tool in the digital world.
 
-### Creating Your First GPG Key
+### Creating Your First GPG Key
 
 Getting started with GPG requires creating a key pair. Follow these steps to generate your first GPG key.
 
-#### Install GPG Tools
+#### Install GPG Tools
 
 On most Linux distributions, GPG tools can be installed via the package manager:
 
@@ -85,7 +85,7 @@ sudo pacman -S --needed gnupg
 
 For other operating systems, download the latest version from the [GPG official website](https://www.gnupg.org/download/).
 
-#### **Generate a GPG Key**
+#### **Generate a GPG Key**
 
 If you are using GPG version 2.1.17 or greater, run the following command.
 
@@ -165,7 +165,7 @@ Once the process completes, your key pair will be ready for use. You can list yo
 gpg --list-keys
 ```
 
-### Using GPG Keys for Git Commit Signing
+### Using GPG Keys for Git Commit Signing
 
 Signing Git commits with GPG keys ensures that your commits are verified and trusted. To configure Git with your GPG key, follow these steps
 
@@ -264,11 +264,11 @@ GPG:                using RSA key ABCD1234EF567890
 GPG: Good signature from "John Doe (Main GPG Key) <johndoe@example.com>"
 ```
 
-### Backing Up and Restoring GPG Keys
+### Backing Up and Restoring GPG Keys
 
 Your GPG keys are essential for maintaining access to encrypted data and verifying your digital identity. Losing your private key means losing access to encrypted messages, signed files, and repositories where the key is required for authentication. Regular backups ensure that you can recover your keys and avoid potentially irreversible data loss.
 
-### Exporting Public and Private Keys
+### Exporting Public and Private Keys
 
 To back up your keys, export both your public and private keys. Use the following commands
 
@@ -288,7 +288,7 @@ gpg -a --export-secret-keys > myprivatekeys.asc
 
 This creates a file named `myprivatekeys.asc` containing your private keys in an encrypted ASCII-armored format. Handle this file with care.
 
-#### Exporting the Trust Database
+#### Exporting the Trust Database
 
 Optionally, export the trust database to retain the trust levels you’ve assigned to other keys
 
@@ -296,7 +296,7 @@ Optionally, export the trust database to retain the trust levels you’ve assign
 gpg --export-ownertrust > otrust.txt
 ```
 
-#### Restoring Keys on a New System
+#### Restoring Keys on a New System
 
 To restore your keys and trust database on a new system, follow these steps
 
@@ -324,11 +324,11 @@ gpg -K  # List private keys
 
 By regularly backing up and properly restoring your GPG keys, you ensure seamless access to your encrypted data and maintain your digital identity.
 
-### Storing GPG Key Passphrases in KDE Wallet
+### Storing GPG Key Passphrases in KDE Wallet
 
 KDE Wallet provides a secure and user-friendly way to manage GPG key passphrases. It encrypts stored credentials, making them accessible only with proper authentication. By integrating KDE Wallet with GPG, users can avoid repeatedly entering passphrases, streamlining workflows while maintaining high security standards.
 
-#### Configuring GPG to Use KDE Wallet
+#### Configuring GPG to Use KDE Wallet
 
 To enable GPG passphrase storage in KDE Wallet, follow these configuration steps
 
@@ -357,7 +357,34 @@ Alternatively, edit the KDE Wallet configuration file (`~/.config/kwalletrc`) di
 apiEnabled=true
 ```
 
-#### Testing the Setup
+#### Limitations and Alternatives
+While KDE Wallet provides a robust way to manage GPG passphrases, there is a known limitation when using `pinentry-qt`. 
+Unfortunately, the graphical passphrase prompt does not display a checkbox to save the passphrase for future use.
+
+##### Workaround: Use `pinentry-kwallet`
+
+To overcome this limitation, you can use pinentry-kwallet, which integrates seamlessly with KDE Wallet and provides the 
+expected functionality. This requires installing the kwalletcli package. Follow these steps:
+1. Install the kwalletcli package:
+   ```bash
+   sudo pacman -S kwalletcli
+   ```
+2. Update your GPG configuration file (`~/.gnupg/gpg-agent.conf`) to use `pinentry-kwallet`:
+   ```ini
+   pinentry-program /usr/bin/pinentry-kwallet
+   ```
+3. Restart the GPG agent to apply the changes:
+   ```bash
+   gpgconf --kill gpg-agent
+   gpgconf --launch gpg-agent
+   ```
+
+With this configuration, KDE Wallet should fully manage your GPG passphrases as expected, including the ability to save them for future use.
+
+For further details, you can refer to the {{< newtablink \"https://wiki.archlinux.org/title/GnuPG#pinentry\" >}}Arch Wiki: GnuPG{{< /newtablink >}} , 
+which provides additional context and troubleshooting tips.
+
+#### Testing the Setup
 
 To verify that KDE Wallet integration is working:
 
@@ -368,7 +395,7 @@ If everything is configured correctly, KDE Wallet will manage your GPG passphras
 
 ### Best Practices for GPG Key Management
 
-#### Regularly Update and Rotate Keys
+#### Regularly Update and Rotate Keys
 
 Periodically updating and rotating your GPG keys ensures that your encryption practices remain secure. Set expiration dates for your keys to enforce regular updates and reduce the risk of outdated keys being compromised.
 
@@ -382,7 +409,7 @@ Integrate KDE Wallet into your workflow to manage GPG passphrases securely and c
 
 By following these best practices, you can ensure the integrity, security, and usability of your GPG keys in both personal and professional contexts.
 
-### Troubleshooting Common Issues
+### Troubleshooting Common Issues
 
 Even with a well-configured setup, issues can arise when working with GPG keys and KDE Wallet. This section addresses common problems, provides solutions, and highlights useful tools and commands for debugging.
 
@@ -421,7 +448,7 @@ Verify the key’s presence with
 gpg --list-keys
 ```
 
-#### KDE Wallet Integration Issues and Fixes
+#### KDE Wallet Integration Issues and Fixes
 
 **KDE Wallet Does Not Store Passphrases**  
 **Issue:** Passphrases are not saved in KDE Wallet despite configuration.  
@@ -487,7 +514,7 @@ Adopting these practices not only strengthens your security posture but also emp
 5. {{< newtablink \"https://help.ubuntu.com/community/GnuPrivacyGuardHowto\" >}}Ubuntu: Installing and Configuring GPG{{< /newtablink >}}
 6. GPG Manual: Command-Line Options
 
-### Don‘t trust me
+### Don‘t trust me
 
 The author is not responsible for any errors or damages resulting from the use of this information.
 
