@@ -141,11 +141,21 @@ sudo pacman -S qemu-user-static-binfmt qemu-user-static
 ```
 
 ### Configuring Multi-Arch Support
-After installing the dependencies, configure QEMU for multi-architecture support by running the following command:
+To enable multi-architecture support, you need to configure QEMU on your system. This allows Podman to emulate and run containers built for architectures other than your host's native one. You have two main approaches to set this up:
+
+#### 1. Using the Multiarch QEMU Container
+Run the following command to configure QEMU for handling non-native architectures:
 ```bash
 sudo podman run --rm --privileged docker.io/multiarch/qemu-user-static --reset -p yes
 ```
-This command sets up QEMU to handle non-native architectures for your containers, ensuring smooth operation.
+This command installs and configures QEMU with `binfmt_misc`, a kernel feature that automatically routes foreign architecture binaries through the appropriate QEMU emulator.
+
+#### 2. Enabling the Systemd Binfmt Service
+Alternatively, instead of using the QEMU container, you can start the systemd-binfmt.service one time on your system or reboot:
+```bash
+sudo systemctl start systemd-binfmt.service
+```
+This service ensures that the required binary format rules are loaded into the kernel, allowing your system to recognize and execute foreign architecture binaries automatically.
 
 ### Running the ARM64 Container
 With the dependencies installed and QEMU configured, re-run the ARM64 container:
@@ -343,6 +353,7 @@ Now that you’ve mastered the basics, you’re ready to experiment with more co
 - {{< newtablink \"https://github.com/nodejs/docker-node/issues/2074\" >}}Node.js Docker Image Issue #2074{{< /newtablink >}}
 - {{< newtablink \"https://pnpm.io/installation#using-corepack\" >}}PNPM Installation Using Corepack{{< /newtablink >}}
 - {{< newtablink \"https://hub.docker.com/_/node/tags?name=lts-alpine\" >}}Node LTS Alpine Tags on Docker Hub{{< /newtablink >}}
+- {{< newtablink \"https://wiki.archlinux.org/title/Podman#Foreign_architectures\" >}}Arch Wiki - Foreign architectures{{< /newtablink >}}
 
 ## Don‘t trust me
 
