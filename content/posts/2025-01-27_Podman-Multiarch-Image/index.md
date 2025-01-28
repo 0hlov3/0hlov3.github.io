@@ -56,6 +56,20 @@ Login Succeeded!
 ```
 
 If you see the message "Login Succeeded!", your Podman client is now authenticated with Docker Hub, and you’re ready to push and pull container images.
+### Important Note About Credential Storage
+By default, Podman stores your registry credentials in an ephemeral directory:
+`${XDG_RUNTIME_DIR}/containers/auth.json`, which typically resolves to a subdirectory in `/run`. Because `/run` is a transient location, its contents disappear after a system reboot. This means you’ll need to log in again after every reboot unless you configure a persistent location.
+#### Persisting Registry Credentials
+To avoid re-authenticating after each reboot, specify a persistent location for your credentials when logging in:
+```bash
+podman login --authfile $HOME/.config/containers/auth.json docker.io
+```
+This command saves the authentication token to `$HOME/.config/containers/auth.json`, ensuring it remains intact across reboots.
+
+For more details about how Podman handles authentication, refer to the `containers-auth.json` manual:
+```bash
+man containers-auth.json
+```
 
 ### Why Use a Personal Access Token?
 Unlike traditional passwords, Personal Access Tokens provide a more secure way to authenticate. They can be scoped to specific permissions (e.g., read/write) and are easier to manage, as they can be revoked or regenerated without affecting your main account credentials.
