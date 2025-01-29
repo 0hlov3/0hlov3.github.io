@@ -4,7 +4,7 @@ subtitle = 'Streamline Your CI/CD Pipeline for Multi-Platform Docker Image Build
 date = 2025-01-25T20:01:00-00:00
 draft = false
 image = "dominic-kurniawan-suryaputra-Y3uFSzzw7Wk-unsplash.jpg"
-tags = ['Hugo','GitHubPages','StaticSiteGenerators','Migration','FreeHosting']
+tags = ['GoReleaser','GitHub Actions','Docker','Multi-Arch Containers','CI/CD Automation']
 +++
 {{< figure src="dominic-kurniawan-suryaputra-Y3uFSzzw7Wk-unsplash.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@d_ks11?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Dominic Kurniawan Suryaputra{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/a-statue-of-a-rocket-sitting-on-top-of-a-rock-Y3uFSzzw7Wk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="Rocket at Marks Park, Fletcher Street, Tamarama NSW, Australia" >}}
 
