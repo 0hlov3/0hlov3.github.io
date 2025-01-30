@@ -18,3 +18,11 @@ tags: ['Microsoft Teams']
 Today we take a look at a solution, how to open 2 teams instances on the Mac simultaneously. I have been looking for a solution that would allow me to do this for a long time, because I have to be active in 2 teams in 2 instances for professional reasons.
 
 So it’s that simple, we installed the native teams app and use it as our first instance, if we want to run a second teams app, we can simply install the Microsoft Edge Browser from the APP store and go to [https://teams.microsoft.com/](https://teams.microsoft.com/), there we can install the browser plugin for teams and run our second instance via the browser.
+
+## Don’t Trust Me — Seriously
+
+The author takes no responsibility for any mishaps, broken servers, or existential crises caused by following this information.
+
+If you spot a mistake, have a better way of doing things, or just want to chat about tech, feel free to reach out.
+
+Also, this isn’t an ad — unless my enthusiasm and advocacy for cool stuff count as advertising.

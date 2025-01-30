@@ -33,3 +33,11 @@ Here’s how you can remap the Caps Lock key to Control on macOS:
 That’s it! Now your Mac keyboard will behave just like your HHKB, keeping things consistent and ergonomic.
 ![](2.png)
 ![](3.png)
+
+## Don’t Trust Me — Seriously
+
+The author takes no responsibility for any mishaps, broken servers, or existential crises caused by following this information.
+
+If you spot a mistake, have a better way of doing things, or just want to chat about tech, feel free to reach out.
+
+Also, this isn’t an ad — unless my enthusiasm and advocacy for cool stuff count as advertising.

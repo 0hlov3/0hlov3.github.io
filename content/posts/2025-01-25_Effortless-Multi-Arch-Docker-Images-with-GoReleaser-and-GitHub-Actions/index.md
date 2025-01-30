@@ -396,8 +396,10 @@ With GoReleaser and GitHub Actions, you can automate building and publishing mul
 
 Try it out, and let me know your thoughts or any improvements you’ve made in the process!
 
-## Don‘t trust me
+## Don’t Trust Me — Seriously
 
-The author is not responsible for any errors or damages resulting from the use of this information.
+The author takes no responsibility for any mishaps, broken servers, or existential crises caused by following this information.
 
-If you have any questions or suggestions for improvement, please feel free to reach out.
+If you spot a mistake, have a better way of doing things, or just want to chat about tech, feel free to reach out.
+
+Also, this isn’t an ad — unless my enthusiasm and advocacy for cool stuff count as advertising.
