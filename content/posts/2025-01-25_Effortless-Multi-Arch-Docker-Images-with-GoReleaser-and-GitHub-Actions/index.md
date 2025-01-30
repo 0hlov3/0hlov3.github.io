@@ -31,7 +31,7 @@ GitHub repository names must be lowercase since GoReleaser does not support uppe
 ## Setting Up the Repository
 To get started, create a new Git repository for your project. If you haven't already, you can do this either locally or directly on GitHub.
 
-If you haven't created the repository on GitHub yet, follow these steps:
+If you haven't created the repository on GitHub yet, you should create one and follow these next steps:
 
 1. Create a new repository on GitHub and name it (e.g., goreleaser-multi-arch-docker).
 2. Clone the repository locally to work on it:
@@ -95,7 +95,7 @@ func main() {
 ```
 #### Explanation:
 - user.Current(): Fetches the current user’s details.
-- Error handling: If fetching the user fails, we log an error and exit. This prevents silent failures.
+- Error handling: we don't do error handling here.
 - runtime.GOOS and runtime.GOARCH: Prints the operating system and CPU architecture, helping verify multi-arch builds.
 ### Compiling the Application
 Since we aim for a statically linked binary to ensure compatibility across different environments, compile the Go application using:
