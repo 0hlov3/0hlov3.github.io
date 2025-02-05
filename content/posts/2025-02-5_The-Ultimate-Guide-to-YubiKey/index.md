@@ -11,7 +11,7 @@ toc = true
 
 {{< figure src="andy-kennedy-FO4CR0MnY_k-unsplash.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@packetdiscards?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Andy Kennedy{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/a-close-up-of-a-usb-stick-on-a-surface-FO4CR0MnY_k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="Container Boat House" >}}
 
-{{< toc >}}
+{{< page-toc >}}
 
 In today’s digital world, security threats are everywhere. From password breaches to sophisticated phishing attacks, online accounts are constantly at risk. Despite the growing awareness of cybersecurity, many people still rely on weak or reused passwords, making them vulnerable to hacking attempts. Even {{< newtablink \"https://www.bsi.bund.de/EN/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Zwei-Faktor-Authentisierung/zwei-faktor-authentisierung_node.html\" >}}two-factor authentication (2FA){{< /newtablink >}}, a widely recommended security measure, isn’t always foolproof—especially when using SMS-based codes, which can be intercepted through {{< newtablink \"https://en.wikipedia.org/wiki/SIM_swap_scam\" >}}SIM-swapping attacks{{< /newtablink >}}.
 
