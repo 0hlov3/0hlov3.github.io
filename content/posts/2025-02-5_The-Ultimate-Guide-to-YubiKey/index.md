@@ -1,5 +1,5 @@
 +++
-title = 'The Ultimate Guide to YubiKey'
+title = 'The Ultimate Guide to WebAuthn & FIDO2'
 subtitle = 'Securing Your Digital Life'
 author = "0hlov3"
 date = 2025-02-04T20:00:00-00:00
@@ -430,6 +430,15 @@ By taking these steps, you'll significantly reduce the risk of phishing, credent
 The future of authentication is passwordless, and security keys like YubiKey play a major role in this transition. Whether you’re an individual looking to protect personal accounts or an organization securing enterprise infrastructure, a hardware security key is one of the best investments you can make in your digital security.
 
 Don’t wait until a security breach happens—secure your accounts today and take control of your online safety.
+
+## Appendix / Community Support
+I received a comment from the Community pointing out that YubiKeys with firmware lower than 5.7 use Infineon libraries, which have been found to have a side-channel attack vulnerability. Since YubiKeys don’t support firmware updates, the only way to fix this issue is to purchase a new device.
+
+Article discussing the issue: https://www.heise.de/en/news/Yubikey-cloning-attack-Apparently-possible-but-not-trivial-9857186.html
+
+Yubico argues that cloning is difficult and requires specific conditions, but one of the core promises of hardware security keys is being non-clonable, so this is understandably disappointing for users who expected to be worry-free.
+
+For most users, this won’t be a major concern, but it’s worth noting for those relying on YubiKey for high-security applications.
 
 ## Helpful Links & Sources
 - {{< newtablink \"https://github.com/drduh/YubiKey-Guide\" >}}YubiKey-Guide{{< /newtablink >}}
