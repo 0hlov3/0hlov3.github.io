@@ -122,7 +122,6 @@ Use Cases for Security Keys
    - Sign Git commits with GPG to ensure code integrity.
    - Protect access to cloud infrastructure (AWS, Azure, Kubernetes, etc.).
 
-### Conclusion
 Security keys provide the strongest protection against credential theft, phishing, and account takeovers. Unlike passwords and traditional 2FA methods, a YubiKey or other hardware security key ensures that only someone with the physical device can access an account.
 
 In the next section, we’ll dive deeper into what a YubiKey is and how it works.
@@ -194,7 +193,7 @@ Using a YubiKey offers significant security and usability advantages over passwo
    - Code signing (GPG-based Git commit signing).
    - Enterprise authentication (Active Directory, Windows logins).
 
-### Conclusion
+
 The YubiKey is a powerful and versatile authentication tool that enhances security for individuals, developers, and enterprises. By using public-key cryptography, it offers phishing-resistant authentication, passwordless login, and strong encryption for digital identities.
 
 In the next section, we’ll explore alternatives to YubiKey, including other hardware security keys and open-source options.
@@ -295,7 +294,7 @@ Despite the presence of open-source and budget-friendly alternatives, YubiKey re
   
   YubiKeys are water-resistant and crush-resistant, designed for long-term use, unlike some budget security keys.
 
-### Conclusion
+
 While SoloKeys, Nitrokey, Google Titan, and Thetis/Kensington keys provide good security, YubiKey remains the most feature-rich, enterprise-ready, and widely supported option.
 
 However, for users who prioritize open-source security, Nitrokey is an excellent alternative, offering FIDO2, PGP, and Smart Card (PIV) support while maintaining full transparency with open-source firmware and hardware.
@@ -317,8 +316,8 @@ Since Yubico Authenticator 6.0+ for Desktop, there is no need to install the Yub
    - For mobile → Install {{< newtablink \"https://www.yubico.com/products/yubico-authenticator/#h-download-yubico-authenticator\" >}}Yubico Authenticator on your phone{{< /newtablink >}}.
    - For desktop → Install {{< newtablink \"https://developers.yubico.com/yubioath-flutter/\" >}}Yubico Authenticator 6.0+{{< /newtablink >}}.
 2. Why use Yubico Authenticator?
-  - Everything is stored on the YubiKey, not your device.
-  - Works seamlessly across devices, just plug in the key and authenticate!
+   - Everything is stored on the YubiKey, not your device.
+   - Works seamlessly across devices, just plug in the key and authenticate!
 
 #### Configuring Your YubiKey for the First Time
 After installing the app, set up your YubiKey before registering it with accounts.
@@ -374,18 +373,29 @@ Organizations use YubiKey for Zero Trust security, phishing-resistant authentica
    - Add FIDO2 Security Key (WebAuthn) as an authentication method.
    - Users can register their YubiKey under Account Settings.
 
+#### Configure GPG Key
+Setting up your YubiKey for GPG (OpenPGP) enhances security by storing private keys securely on the device, preventing key theft and unauthorized access.
+
+To get started, follow these in-depth guides:
+- {{< newtablink \"https://support.yubico.com/hc/en-us/articles/360013790259-Using-Your-YubiKey-with-OpenPGP\" >}}Official Yubico Guide{{< /newtablink >}}
+- {{< newtablink \"https://github.com/drduh/YubiKey-Guide\" >}}Advanced Community Guide{{< /newtablink >}}
+
+If something goes wrong during the setup process or you may need to reset your GPG PINs.
+These PINs cannot be managed from the Yubico Authenticator app, instead, you must use {{< newtablink \"https://support.yubico.com/hc/en-us/articles/360013761339-Resetting-the-OpenPGP-Application-on-the-YubiKey\" >}}ykman (YubiKey Manager CLI) - Resetting the OpenPGP Application on the YubiKey{{< /newtablink >}}.
+```shell
+ykman openpgp access change-admin-pin
+ykman openpgp access change-pin
+```
 ### Backup & Recovery
 1. The Importance of Having a Backup Security Key
    - If your YubiKey is lost or damaged, you could be locked out of important accounts.
    - Solution: Register at least two YubiKeys with critical services.
 2. What to Do If You Lose Your YubiKey
-   - Google, GitHub, Microsoft, and most services allow recovery via backup keys.
+   - Google, GitHub, Microsoft and most services allow recovery via backup keys.
    - If you have a backup YubiKey, you can simply use it to regain access.
    - If no backup is available, you may need to use account recovery processes, which vary by provider.
 
 **For PGP and SSH**: Keep backup copies of your keys (exported securely) to prevent being locked out of encrypted data.
-
-### Conclusion
 
 A properly configured YubiKey provides unmatched security for authentication, encryption, and secure development workflows. By setting up passwordless login, SSH authentication, and GPG signing, users can significantly reduce their attack surface.
 
@@ -399,7 +409,7 @@ This is where hardware security keys like YubiKey come in. By leveraging public-
 
 - Phishing resistance – No passwords or OTPs to steal via fake login pages.
 - Offline authentication – No reliance on SMS networks or phone-based authentication apps.
-- Multi-protocol support – Works for personal accounts, enterprise security, SSH access, and code signing.
+- Multi-Protocol support – Works for personal accounts, enterprise security, SSH access, and code signing.
 - Convenience & speed – No need to manually enter codes, just tap and authenticate.
 
 We've explored why security keys matter, how YubiKey works, and even alternative options like Nitrokey and SoloKeys. We've also walked through how to set up a YubiKey, whether for personal accounts, enterprise use, SSH authentication, or GPG key signing.
@@ -426,7 +436,6 @@ Don’t wait until a security breach happens—secure your accounts today and ta
 - {{< newtablink \"https://www.yubico.com/works-with-yubikey/catalog/?sort=popular-for-individuals&protocol=5\" >}}Works with YubiKey catalog{{< /newtablink >}}
 - {{< newtablink \"https://docs.yubico.com/software/yubikey/tools/authenticator/auth-guide/piv-certificates.html\" >}}Piv Certificates{{< /newtablink >}}
 - {{< newtablink \"https://support.yubico.com/hc/en-us/articles/360013790259-Using-Your-YubiKey-with-OpenPGP\" >}}Using Your YubiKey with OpenPGP{{< /newtablink >}}
-- {{< newtablink \"https://support.yubico.com/hc/en-us/articles/360013790259-Using-Your-YubiKey-with-OpenPGP\" >}}Using Your YubiKey with OpenPGP{{< /newtablink >}}
 - {{< newtablink \"https://www.yubico.com\" >}}Yubico Main Website{{< /newtablink >}}
 - {{< newtablink \"https://www.yubico.com/quiz/\" >}}Which YubiKey is Right for Me? (Quiz){{< /newtablink >}}
 - {{< newtablink \"https://developers.yubico.com/yubioath-flutter/\" >}}Yubico Authenticator for Desktop & Mobile{{< /newtablink >}}
@@ -448,6 +457,7 @@ Don’t wait until a security breach happens—secure your accounts today and ta
 - {{< newtablink \"https://developers.yubico.com/OpenPGP/SSH_authentication.html\" >}}SSH Authentication with YubiKey (FIDO2 & PGP){{< /newtablink >}}
 - {{< newtablink \"https://docs.yubico.com/yesdk/users-manual/use-cases/git-signing.html\" >}}Using YubiKey for GPG Key Management & Signing Git Commits{{< /newtablink >}}
 - {{< newtablink \"https://passkeys.dev/\" >}}Passkey Authentication (Apple, Google, Microsoft){{< /newtablink >}}
+- {{< newtablink \"https://support.yubico.com/hc/en-us/articles/360013761339-Resetting-the-OpenPGP-Application-on-the-YubiKey\" >}}Resetting the OpenPGP Application on the YubiKey{{< /newtablink >}}
 
 ## Don’t Trust Me — Seriously
 
