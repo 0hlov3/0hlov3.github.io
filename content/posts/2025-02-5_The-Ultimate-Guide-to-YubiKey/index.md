@@ -9,7 +9,7 @@ tags = ['YubiKey','Security Keys','Two-Factor Authentication (2FA)','FIDO2/WebAu
 toc = true
 +++
 
-{{< figure src="andy-kennedy-FO4CR0MnY_k-unsplash.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@packetdiscards?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Andy Kennedy{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/a-close-up-of-a-usb-stick-on-a-surface-FO4CR0MnY_k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="Container Boat House" >}}
+{{< figure src="andy-kennedy-FO4CR0MnY_k-unsplash.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@packetdiscards?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Andy Kennedy{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/a-close-up-of-a-usb-stick-on-a-surface-FO4CR0MnY_k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="a close up of a usb stick on a surface" >}}
 
 {{< page-toc >}}
 
