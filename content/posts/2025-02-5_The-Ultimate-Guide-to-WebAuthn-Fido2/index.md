@@ -434,10 +434,10 @@ The future of authentication is passwordless, and security keys like YubiKey pla
 
 Don’t wait until a security breach happens—secure your accounts today and take control of your online safety.
 
-## Appendix / Community Support
+## Appendix: Community-Supported Information
 I received a comment from the Community pointing out that YubiKeys with firmware lower than 5.7 use Infineon libraries, which have been found to have a side-channel attack vulnerability. Since YubiKeys don’t support firmware updates, the only way to fix this issue is to purchase a new device.
 
-Article discussing the issue: https://www.heise.de/en/news/Yubikey-cloning-attack-Apparently-possible-but-not-trivial-9857186.html
+Article discussing the issue: {{< newtablink \"https://www.heise.de/en/news/Yubikey-cloning-attack-Apparently-possible-but-not-trivial-9857186.html\" >}}https://www.heise.de/en/news/Yubikey-cloning-attack-Apparently-possible-but-not-trivial-9857186.html{{< /newtablink >}}
 
 Yubico argues that cloning is difficult and requires specific conditions, but one of the core promises of hardware security keys is being non-clonable, so this is understandably disappointing for users who expected to be worry-free.
 
