@@ -1,12 +1,15 @@
 +++
 title = 'The Ultimate Guide to WebAuthn & FIDO2'
-subtitle = 'Securing Your Digital Life'
+subtitle = 'Securing Your Digital Life with YubiKey'
 author = "0hlov3"
 date = 2025-02-04T20:00:00-00:00
 draft = false
 image = "andy-kennedy-FO4CR0MnY_k-unsplash.jpg"
 tags = ['YubiKey','Security Keys','Two-Factor Authentication (2FA)','FIDO2/WebAuthn','Passwordless Authentication']
 toc = true
+
+aliases = ['/posts/2025-02-5_The-Ultimate-Guide-to-YubiKey']
+
 +++
 
 {{< figure src="andy-kennedy-FO4CR0MnY_k-unsplash.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@packetdiscards?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Andy Kennedy{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/a-close-up-of-a-usb-stick-on-a-surface-FO4CR0MnY_k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="a close up of a usb stick on a surface" >}}
@@ -26,7 +29,7 @@ In this article, we’ll explore:
 - The available alternatives to YubiKey and how they compare.
 - How to get started with a YubiKey, from choosing the right model to setting it up for different use cases.
 
-By the end, you'll have a clear understanding of how a YubiKey can help secure your digital identity and whether it’s the right choice for you.
+By the end, you'll have a clear understanding of how a YubiKey and other hardware security keys can help secure your digital identity and whether it’s the right choice for you.
 
 ## Why do you need a Security Key?
 Passwords have long been the standard for securing online accounts, but they come with significant weaknesses:
