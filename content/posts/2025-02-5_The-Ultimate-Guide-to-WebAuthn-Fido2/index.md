@@ -390,13 +390,17 @@ ykman openpgp access change-admin-pin
 ykman openpgp access change-pin
 ```
 ### Backup & Recovery
-1. The Importance of Having a Backup Security Key
-   - If your YubiKey is lost or damaged, you could be locked out of important accounts.
-   - Solution: Register at least two YubiKeys with critical services.
-2. What to Do If You Lose Your YubiKey
-   - Google, GitHub, Microsoft and most services allow recovery via backup keys.
-   - If you have a backup YubiKey, you can simply use it to regain access.
-   - If no backup is available, you may need to use account recovery processes, which vary by provider.
+1. The Importance of a Backup Security Key
+   - Losing or damaging your YubiKey could lock you out of important accounts.
+   - Solution: Always register at least two YubiKeys with critical services to ensure access in case of failure.
+2. Why you should have a third Backup Security Key
+   - Keeping an additional backup key in a separate physical location (e.g., a safe) protects against theft, fire, or loss.
+4. What to Do If You Lose Your YubiKey
+   - Many services, including Google, GitHub, and Microsoft, support recovery via backup keys.
+   - If you have a backup YubiKey, simply use it to regain access.
+   - If no backup is available, you may need to follow the account recovery process of the respective service, which can be time-consuming.
+4. Tracking Your Security Keys
+   - Maintain a spreadsheet to document which accounts are linked to which YubiKeys, ensuring you have a clear recovery plan.
 
 **For PGP and SSH**: Keep backup copies of your keys (exported securely) to prevent being locked out of encrypted data.
 
