@@ -228,6 +228,34 @@ With this configuration:
 - The standard username/password login form will be hidden.
 - HTTP Basic Authentication will be disabled, preventing direct API authentication with local credentials.
 
+#### Changing the Default Admin Password
+For security reasons, it's recommended to change the default admin password in Grafana. If you're using the `kube-prometheus-stack` Helm chart, you can store the new admin credentials securely in a Kubernetes Secret instead of hardcoding them in the configuration.
+
+##### Create a Kubernetes Secret for the Admin Credentials
+Run the following command to generate a secure random admin username and password and store them in a Kubernetes Secret:
+```bash
+kubectl create secret generic grafana-user-pass \
+  --from-literal admin-user="$(openssl rand -hex 16)" \
+  --from-literal admin-password="$(openssl rand -hex 16)"
+```
+- Generates a random 16-character hex string for both the admin username and password.
+- Creates a Kubernetes Secret named grafana-user-pass to securely store the credentials.
+
+##### Reference the Secret in the Helm `values.yaml` Configuration
+```yaml
+grafana:
+  admin:
+    ## Reference the Kubernetes secret containing the admin credentials
+    existingSecret: "grafana-user-pass"
+    userKey: admin-user
+    passwordKey: admin-password
+```
+- existingSecret: "grafana-user-pass" → Tells Grafana to use the grafana-user-pass secret.
+- userKey: admin-user → Specifies the key in the secret that holds the admin username.
+- passwordKey: admin-password → Specifies the key in the secret that holds the admin password.
+
+Once you apply these changes and upgrade your Helm release, Grafana will use the credentials stored in the Kubernetes Secret, making the setup more secure and avoiding plaintext passwords in configuration files.
+
 ## Testing the Integration
 Now that Grafana is configured to use Zitadel as an OIDC provider, it’s time to test the authentication flow and troubleshoot any potential issues.
 ### 1. Logging into Grafana with Zitadel
