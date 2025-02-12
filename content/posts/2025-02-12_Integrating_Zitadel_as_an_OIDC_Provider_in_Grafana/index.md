@@ -2,7 +2,7 @@
 title = 'Integrating Zitadel as an OIDC Provider in Grafana'
 subtitle = 'Improve your Grafana authentication flow with Zitadel’s OpenID Connect integration'
 author = "0hlov3"
-date = 2025-02-06T20:00:00-00:00
+date = 2025-02-12T16:00:00
 draft = false
 image = "luke-chesser-JKUTrJ4vK00-unsplash.jpg"
 tags = ['Grafana','Zitadel','OIDC','Authentication','Kubernetes']
