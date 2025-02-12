@@ -5,13 +5,13 @@ author = "0hlov3"
 date = 2025-02-06T20:00:00-00:00
 draft = false
 image = "luke-chesser-JKUTrJ4vK00-unsplash.jpg"
-tags = ['YubiKey','Security Keys','Two-Factor Authentication (2FA)','FIDO2/WebAuthn','Passwordless Authentication']
+tags = ['Grafana','Zitadel','OIDC','Authentication','Kubernetes']
 +++
 {{< figure src="luke-chesser-JKUTrJ4vK00-unsplash.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@lukechesser?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Luke Chesser{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="Speedcurve Performance Analytics - Grafana Dashboard" >}}
 
 {{< page-toc >}}
 
-Yesterday, I decided to secure my Grafana instance using Zitadel as an OpenID Connect (OIDC) provider. While setting up the integration, I encountered a few challenges and learned a lot along the way. Since there isn’t much documentation on connecting Grafana with Zitadel, I want to share my experience to help others who might be looking for a similar setup.
+While securing my Grafana instance with Zitadel as an OpenID Connect (OIDC) provider, I encountered several challenges and gained valuable insights. Since documentation on this integration is limited, I’m sharing my step-by-step guide to help others set up Zitadel authentication for Grafana with ease.
 
 ***What is Grafana?***
 Grafana is an open-source platform for monitoring and observability, widely used to visualize and analyze time-series data from various sources like Prometheus, InfluxDB, and Loki. It provides a powerful dashboarding interface, making it a popular choice for DevOps teams, SREs, and developers.
