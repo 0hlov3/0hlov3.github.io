@@ -25,7 +25,7 @@ By integrating Zitadel as an OIDC provider, you can enable secure authentication
 ## Configuring Zitadel
 Before we can connect Grafana to Zitadel, we need to configure Zitadel as an OIDC provider. This involves creating an application, setting up the necessary permissions, and obtaining authentication credentials.
 
-### 1. Creating an Application in Zitadel
+### Creating an Application in Zitadel
 To enable Grafana to authenticate users via Zitadel, we need to register Grafana as an application within Zitadel and configure its authentication settings.
 1. Log in to your Zitadel instance or the hosted version at {{< newtablink \"https://zitadel.cloud\" >}}zitadel.cloud{{< /newtablink >}}.
 2. Navigate to Projects → Create Project and give it a meaningful name (e.g. `Grafana OIDC`, `Grafana` or `Monitoring`).
@@ -66,12 +66,73 @@ To enable Grafana to authenticate users via Zitadel, we need to register Grafana
      https://accounts.zitadel.cloud
      ```
 
-
 Now that Zitadel is configured, we can proceed to setting up Grafana to use Zitadel as its OIDC provider.
 
 ## Configuring Grafana for OIDC
 
 Now that Zitadel is set up as an OIDC provider, we need to configure Grafana to authenticate users via Zitadel. This involves modifying the grafana.ini configuration file, setting up the OIDC authentication options, and enabling login through Zitadel.
+
+### Using Custom Role Mapping in Grafana
+By default, Zitadel provides role claims in the `urn:zitadel:iam:org:project:roles` format. If you want to simplify the role mapping in Grafana and use the `"groups"` claim instead, you need to create a custom Zitadel action that adds roles as `"groups"` in the user's token.
+
+#### Why is this necessary?
+If you want to use this configuration in `grafana.ini`:
+```ini
+role_attribute_path = contains(groups[*], 'monitoring_admin') && 'GrafanaAdmin' || contains(groups[*], 'monitoring_editor') && 'Editor' || 'Viewer'
+```
+You must first create a Zitadel action to transform the default role format into the `"groups"` claim.
+
+#### Creating the Zitadel Action
+
+Inside Zitadel, create an action that runs before token issuance and adds the "groups" claim:
+Go to Actions, click New and choose groupsClaim as the name of your action.
+
+```javascript
+/**
+ * Sets the roles as an additional claim in the token with "groups" as the key
+ *
+ * The role claims of the token will look like this:
+ * "groups": ["monitoring_admin", "monitoring_editor"]
+ *
+ * Flow: Complement token, Triggers: Pre Userinfo creation, Pre access token creation
+ */
+function groupsClaim(ctx, api) {
+  if (ctx.v1.user.grants === undefined || ctx.v1.user.grants.count == 0) {
+    return;
+  }
+
+  let grants = [];
+  ctx.v1.user.grants.grants.forEach((claim) => {
+    claim.roles.forEach((role) => {
+      grants.push(role);
+    });
+  });
+
+  api.v1.claims.setClaim("groups", grants);
+}
+```
+
+**⚠️ Important:**  
+Make sure to **check "Allowed To Fail"** when creating the action.
+- If this is not checked and a user does not have a role assigned, the action will fail, causing the **login flow to break**, and the user may not be able to log in to Zitadel.
+
+Steps to Enable This Action in Zitadel
+
+- Create the action in Zitadel using the script above.
+- Assign the action to the following flows:
+    - Pre Userinfo creation
+    - Pre Access Token creation
+    - Save & activate the action.
+
+Your Actions page should now look like the following screenshot:
+![zitadel-actions.png](zitadel-actions.png)
+
+#### Alternative Approach Without Custom Action
+If you don't want to create a custom action, you can use the default Zitadel roles format in Grafana:
+```ini
+role_attribute_path = contains(keys("urn:zitadel:iam:org:project:roles")[?starts_with(@, 'monitoring_')], 'monitoring_admin') && 'GrafanaAdmin' || contains(keys("urn:zitadel:iam:org:project:roles")[?starts_with(@, 'monitoring_')], 'monitoring_editor') && 'Editor' || 'Viewer'
+```
+This method directly references Zitadel’s default role format, but it is more complex and harder to read.
 
 ### Configuring Grafana through kube-prometheus-stack helm chart
 If you have already deployed the {{< newtablink \"https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack\" >}}kube-prometheus-stack{{< /newtablink >}}  in your Kubernetes cluster, you can configure Grafana to use Zitadel for authentication by modifying its configuration.
@@ -97,7 +158,7 @@ kubectl create secret generic zitadel-secret \
 ```
 
 This secret will store all the OIDC-related environment variables that Grafana needs for authentication.
-#### 2. Customizing values.yaml for Helm Deployment
+#### Customizing values.yaml for Helm Deployment
 After creating the secret, we need to update our values.yaml configuration for kube-prometheus-stack to use Zitadel authentication. Below is a `snippet` of the required changes—make sure to integrate this into your own `values.yaml`.
 ```yaml
 grafana:
@@ -192,6 +253,14 @@ After setting up Zitadel as an OIDC provider for Grafana, you may want to fine-t
 Depending on your Zitadel configuration and version, you may need to define the role attribute path explicitly. This setting ensures that user roles from Zitadel are correctly mapped to Grafana roles.
 ```shell
 role_attribute_path = contains('"user-roles[*]"', 'monitoring_admin') && 'GrafanaAdmin' || contains('"user-roles[*]"', 'monitoring_editor') && 'Editor' || 'Viewer'
+```
+
+EDIT (from comment):
+
+| I only had to change the role_attribute_path configuration because Zitadel sends the role in “urn:zitadel:iam:org:project:{projectId}:roles” and “urn:zitadel:iam:org:project:roles”.
+
+```shell
+role_attribute_path = contains(keys("urn:zitadel:iam:org:project:roles")[?starts_with(@, 'monitoring_')], 'monitoring_admin') && 'GrafanaAdmin' || contains(keys("urn:zitadel:iam:org:project:roles")[?starts_with(@, 'monitoring_')], 'monitoring_editor') && 'Editor' || 'Viewer'
 ```
 
 Ensure that the role names match the ones defined in your Zitadel application.
@@ -338,11 +407,14 @@ Now your Grafana instance is secured with Zitadel authentication! Happy monitori
   - {{< newtablink \"https://zitadel.com/docs/guides/integrate/login/oidc/login-users\" >}}Zitadel OIDC Authentication{{< /newtablink >}}
   - {{< newtablink \"https://zitadel.com/docs/guides/manage/console/applications\" >}}Managing Applications in Zitadel{{< /newtablink >}}
   - {{< newtablink \"https://zitadel.com/docs/apis/introduction\" >}}Zitadel API Reference{{< /newtablink >}}
+  - {{< newtablink \"https://zitadel.com/docs/guides/manage/console/actions\" >}}Zitadel Actions Documentation{{< /newtablink >}}
 - OpenID Connect (OIDC) Resources:
   - {{< newtablink \"https://openid.net/developers/how-connect-works/\" >}}Introduction to OpenID Connect{{< /newtablink >}}
 - Security Best Practices:
   - {{< newtablink \"https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html\" >}}OWASP Authentication Cheat Sheet{{< /newtablink >}}
   - {{< newtablink \"https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet.html\" >}}Best Practices for OAuth 2.0{{< /newtablink >}}
+- Other
+  - {{< newtablink \"https://argo-cd.readthedocs.io/en/latest/operator-manual/user-management/zitadel/#setting-up-an-action-in-zitadel\" >}}Setting up an action in Zitadel{{< /newtablink >}}
 ## Don’t Trust Me — Seriously
 
 The author takes no responsibility for any mishaps, broken servers, or existential crises caused by following this information.
