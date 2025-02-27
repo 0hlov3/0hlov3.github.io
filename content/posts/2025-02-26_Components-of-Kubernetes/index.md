@@ -34,13 +34,13 @@ The API Server serves as the main gateway for all communications with the cluste
   When a request to create, update, or delete an object (such as a pod or service) is received, the API Server performs thorough validations. It checks the request against the API schema and business rules to ensure the data is correct and complies with cluster policies.
 
 - **Admission Control:**  
-  Before any change is persisted, the API Server runs the request through a series of admission controllers. These plugins enforce additional policies—for example, resource quotas, security constraints, or custom business logic—to determine whether the request should be allowed.
+  Before any change is persisted, the API Server runs the request through a series of admission controllers. These plugins enforce additional policies for example, resource quotas, security constraints, or custom business logic, to determine whether the request should be allowed.
 
 - **State Management and Persistence:**  
   The API Server communicates with etcd, the cluster’s distributed key-value store, to save and retrieve cluster state. Every validated request results in an update to etcd, ensuring that the cluster's current state is always available and consistent across all components.
 
 - **Authentication and Authorization:**  
-  Security is integral to cluster operations. The API Server handles authentication by verifying the identity of the requestor—be it a human user or a service account. It then applies authorization checks (often using Role-Based Access Control, or RBAC) to ensure the requestor has the proper permissions to perform the requested operation.
+  Security is integral to cluster operations. The API Server handles authentication by verifying the identity of the requestor, be it a human user or a service account. It then applies authorization checks (often using Role-Based Access Control, or RBAC) to ensure the requestor has the proper permissions to perform the requested operation.
 
 - **API Aggregation and Extensibility:**  
   The API Server supports the addition of new APIs through API aggregation. This means you can extend Kubernetes’ functionality with custom resources and controllers without modifying the core server, making it highly extensible.
