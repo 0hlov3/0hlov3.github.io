@@ -118,7 +118,7 @@ The Controller Manager is a vital component of the Kubernetes control plane. It 
 
 #### Role
 
-The Controller Manager is responsible for running multiple controllers that manage different aspects of the cluster. Each controller is dedicated to a specific task—such as managing replicas, monitoring node health, or updating service endpoints. Together, these controllers work to reconcile the actual state of the cluster with the desired state defined by Kubernetes objects.
+The Controller Manager is responsible for running multiple controllers that manage different aspects of the cluster. Each controller is dedicated to a specific task, such as managing replicas, monitoring node health, or updating service endpoints. Together, these controllers work to reconcile the actual state of the cluster with the desired state defined by Kubernetes objects.
 
 #### Key Functions
 
@@ -145,7 +145,7 @@ The Controller Manager is responsible for running multiple controllers that mana
 ####  Custom Controllers and Extensibility:
 Developers can leverage Kubernetes client libraries, such as client-go, to build custom controllers that monitor and manage specific aspects of the cluster. Additionally, frameworks like Operator SDK and Kubebuilder provide powerful scaffolding and abstractions to simplify the development of Kubernetes operators and custom controllers. These tools streamline the process of implementing advanced workflows, enforcing unique policies, or automating complex operational tasks, further emphasizing the extensibility and flexibility of Kubernetes.
 
-In practical deployments, custom controllers can dramatically improve operational efficiency. For example, they can automatically adjust resource allocations or scale services in response to real-time metrics from external monitoring systems. Additionally, custom controllers can proactively remediate issues, such as restarting failing pods or updating configurations based on external triggers—without manual intervention. These capabilities help maintain service reliability and optimize resource usage in dynamic, large-scale environments.
+In practical deployments, custom controllers can dramatically improve operational efficiency. For example, they can automatically adjust resource allocations or scale services in response to real-time metrics from external monitoring systems. Additionally, custom controllers can proactively remediate issues, such as restarting failing pods or updating configurations based on external triggers, without manual intervention. These capabilities help maintain service reliability and optimize resource usage in dynamic, large-scale environments.
 
 #### Conclusion
 
@@ -167,7 +167,7 @@ etcd is responsible for storing every configuration detail and piece of state in
   etcd uses consensus algorithms (such as {{< newtablink \"https://thesecretlivesofdata.com/raft/\" >}}Raft{{< /newtablink >}}) to ensure that any data written to the store is consistently replicated across all etcd nodes. This mechanism guarantees that every client accessing etcd sees the same, up-to-date state, even in the event of node failures or network issues.
 
 - **Providing a Centralized Data Source for the Control Plane:**  
-  The Kubernetes API Server reads from and writes to etcd, making it the central repository for all cluster state. All changes in the cluster—whether they are updates to pod configurations, service definitions, or scaling directives—are stored in etcd, ensuring that every control plane component can access the latest information.
+  The Kubernetes API Server reads from and writes to etcd, making it the central repository for all cluster state. All changes in the cluster—whether they are updates to pod configurations, service definitions, or scaling directives, are stored in etcd, ensuring that every control plane component can access the latest information.
 
 - **Acting as the Single Source of Truth:**  
   Because etcd holds the entire state of the cluster, it is the definitive record for recovery, scaling, and rollback operations. In the event of failures or during cluster initialization, etcd's data allows Kubernetes to reestablish the desired state reliably.
@@ -182,7 +182,7 @@ While this article focuses on the core role of etcd in maintaining cluster state
 
 #### Conclusion
 
-etcd is not just a data store—it is the linchpin of Kubernetes’ operational integrity. By ensuring that every component in the control plane has access to a consistent and reliable source of configuration data, etcd enables Kubernetes to deliver on its promises of automation, scalability, and resilience. Understanding etcd’s role is essential for grasping how Kubernetes achieves its self-healing and highly available architecture.
+etcd is not just a data store, it is the linchpin of Kubernetes’ operational integrity. By ensuring that every component in the control plane has access to a consistent and reliable source of configuration data, etcd enables Kubernetes to deliver on its promises of automation, scalability, and resilience. Understanding etcd’s role is essential for grasping how Kubernetes achieves its self-healing and highly available architecture.
 
 ----
 
@@ -238,7 +238,7 @@ The Kubelet is an essential agent that runs on every worker node within a Kubern
 
 #### Role
 
-The primary role of the Kubelet is to manage the lifecycle of pods on its node. It continuously checks that each container is running in accordance with the pod specifications defined by the control plane. If a container deviates from its desired state—whether due to a crash, resource issue, or other failure—the Kubelet takes corrective actions to restore normal operations.
+The primary role of the Kubelet is to manage the lifecycle of pods on its node. It continuously checks that each container is running in accordance with the pod specifications defined by the control plane. If a container deviates from its desired state, whether due to a crash, resource issue, or other failure—the Kubelet takes corrective actions to restore normal operations.
 
 #### Key Functions
 
