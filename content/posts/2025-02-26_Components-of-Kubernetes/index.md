@@ -103,7 +103,7 @@ The Scheduler’s primary responsibility is to assign unscheduled pods to the mo
 
 ![](scheduler.png)
 
-### Custom Scheduler Extenders and Plugins:
+#### Custom Scheduler Extenders and Plugins:
 For advanced use cases, Kubernetes allows the integration of custom scheduler extenders and plugins. These extensions enable you to implement specialized scheduling policies beyond the default behavior. For example, if your workloads require unique resource allocation, custom priority scoring, or specialized handling of non-containerized workloads, you can extend the Scheduler to meet these needs. This flexibility empowers teams to tailor the scheduling process to their specific operational requirements while maintaining optimal cluster performance.
 
 #### Conclusion
@@ -177,7 +177,7 @@ etcd is responsible for storing every configuration detail and piece of state in
 
 ![](etcd.png)
 
-### Additional etcd Aspects:
+#### Additional etcd Aspects:
 While this article focuses on the core role of etcd in maintaining cluster state with strong consistency via the Raft consensus algorithm, there are many other important topics, such as backup and recovery strategies, that are critical to understanding its full impact on cluster reliability. We'll cover these advanced aspects of etcd in a separate article.
 
 #### Conclusion
@@ -292,7 +292,7 @@ While Kube-proxy is a standard component in many Kubernetes clusters, its functi
 
 #### Conclusion
 
-Kube-proxy is essential for managing network rules and ensuring reliable communication within a Kubernetes cluster. Its ability to use iptables or IPVS for traffic direction and load balancing underpins much of the cluster's network functionality. However, with the advent of advanced network plugins that offer built-in service routing and load balancing, Kube-proxy’s role can become optional in certain deployments. Understanding when and how to utilize Kube-proxy—or its alternatives—allows you to design a more flexible and efficient Kubernetes networking setup.
+Kube-proxy is essential for managing network rules and ensuring reliable communication within a Kubernetes cluster. Its ability to use iptables or IPVS for traffic direction and load balancing underpins much of the cluster's network functionality. However, with the advent of advanced network plugins that offer built-in service routing and load balancing, Kube-proxy’s role can become optional in certain deployments. Understanding when and how to utilize Kube-proxy, or its alternatives, allows you to design a more flexible and efficient Kubernetes networking setup.
 
 ----
 
