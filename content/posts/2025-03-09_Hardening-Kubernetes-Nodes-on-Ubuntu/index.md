@@ -305,14 +305,14 @@ This final review will help you understand the security posture of your Ubuntu n
 
 The CIS-CAT report highlights any failed tests along with clear instructions for remediation. For instance, if the SSH configuration does not meet the CIS Benchmark, you might see a recommendation similar to the following:
 
-### 4\.2.7 Ensure SSH root login is disabled
-
-Description:
-
-The PermitRootLogin parameter specifies if the root user can log in using SSH. The default is prohibit-password .
-
-Disallowing root logins over SSH requires system admins to authenticate using their own individual account, then escalating to root . This limits opportunity for non-repudiation and provides a clear audit trail in the event of a security incident.
-
+> ### 4\.2.7 Ensure SSH root login is disabled
+> 
+> Description:
+> 
+> The PermitRootLogin parameter specifies if the root user can log in using SSH. The default is prohibit-password .
+> 
+> Disallowing root logins over SSH requires system admins to authenticate using their own individual account, then escalating to root . This limits opportunity for non-repudiation and provides a clear audit trail in the event of a security incident.
+> 
 > Edit the /etc/ssh/sshd\_config file to set the parameter above any Include entries as follows:
 > 
 > `PermitRootLogin no`
@@ -359,6 +359,7 @@ Following these step-by-step instructions not only helps to minimize the attack 
 - {{< newtablink \"https://www.cisecurity.org/cybersecurity-tools/cis-cat-pro/cis-benchmarks-supported-by-cis-cat-pro\" >}}https://www.cisecurity.org/cybersecurity-tools/cis-cat-pro/cis-benchmarks-supported-by-cis-cat-pro{{< /newtablink >}}
 - {{< newtablink \"https://learn.cisecurity.org/cis-cat-lite\" >}}https://learn.cisecurity.org/cis-cat-lite{{< /newtablink >}}
 - {{< newtablink \"https://medium.com/@aika.nazhimidinova/cis-benchmark-of-ubuntu-22-04-openscap-security-guide-707f206e73c8\" >}}https://medium.com/@aika.nazhimidinova/cis-benchmark-of-ubuntu-22-04-openscap-security-guide-707f206e73c8{{< /newtablink >}}
+- {{< newtablink \"https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course/blob/main/docs/03-Cluster-Setup-and-Hardening/03-Lab-Run-CIS-Benchmark-Assessment-tool-on-Ubuntu.md\" >}}https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course/blob/main/docs/03-Cluster-Setup-and-Hardening/03-Lab-Run-CIS-Benchmark-Assessment-tool-on-Ubuntu.md{{< /newtablink >}}
 
 ## Don’t Trust Me - Seriously
 
