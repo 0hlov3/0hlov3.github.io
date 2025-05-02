@@ -369,3 +369,20 @@ There’s no one-size-fits-all answer. YAML is a favorite in the DevOps world fo
 In the end, the best configuration file is one that both humans can maintain safely and machines can process reliably. By understanding the trade-offs between readability, structure, tooling, and validation, you’ll be better equipped to make informed, maintainable choices in your projects.
 
 Whichever format you choose, consistency, documentation, and validation are just as important as the syntax itself.
+
+## Sources & Further Reading
+
+- {{< newtablink "https://en.wikipedia.org/wiki/INI_file" >}}INI file – Wikipedia{{< /newtablink >}}
+- {{< newtablink "https://www.w3.org/XML/" >}}XML – W3C Specification{{< /newtablink >}}
+- {{< newtablink "https://www.json.org/json-en.html" >}}JSON – Introducing JSON{{< /newtablink >}}
+- {{< newtablink "https://yaml.org/spec/1.2.2/" >}}YAML – YAML 1.2 Spec{{< /newtablink >}}
+- {{< newtablink "https://toml.io/en/v1.0.0" >}}TOML – Official TOML Language{{< /newtablink >}}
+- {{< newtablink "https://12factor.net/config" >}}The Twelve-Factor App – Config{{< /newtablink >}}
+
+## Don’t Trust Me - Seriously
+
+The author takes no responsibility for any mishaps, broken servers, or existential crises caused by following this information.
+
+Found a mistake? Open an issue or PR on GitHub, or ping me on Mastodon/LinkedIn/Twitter. Let’s improve it together.
+
+Also, this isn’t an ad - unless my enthusiasm and advocacy for cool stuff count as advertising.
