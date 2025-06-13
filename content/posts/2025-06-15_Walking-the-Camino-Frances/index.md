@@ -1,7 +1,7 @@
 +++
 title = "Walking the Camino Frances"
 subtitle = "Reflections from the Way"
-date = 2025-06-15T00:00:00
+date = 2025-06-14T00:00:00
 image = "huy-phan-yNBoyifsl5w-unsplash.jpg"
 tags = ["configuration", "devops", "sre", "yaml", "json"]
 +++
