@@ -2,7 +2,7 @@
 title = "Walking the Camino Frances"
 subtitle = "Reflections from the Way"
 date = 2025-06-13T00:01:00
-image = "forest.JPEG"
+image = "forest.jpeg"
 tags = ["camino de santiago", "camino frances", "long distance hiking", "personal growth", "digital detox"]
 +++
 
