@@ -1,12 +1,12 @@
 +++
 title = "Walking the Camino Frances"
 subtitle = "Reflections from the Way"
-date = 2025-06-14T00:00:00
-image = "huy-phan-yNBoyifsl5w-unsplash.jpg"
-tags = ["configuration", "devops", "sre", "yaml", "json"]
+date = 2025-06-13T00:01:00
+image = "forest.JPEG"
+tags = ["camino de santiago", "camino frances", "long distance hiking", "personal growth", "digital detox"]
 +++
 
-![A peaceful river winding through the lush Galician landscape – one of many quiet moments along the Camino that reminded me why I chose to walk.](forest.JPEG)
+![A peaceful river winding through the lush Galician landscape – one of many quiet moments along the Camino that reminded me why I chose to walk.](./forest.jpeg)
 
 {{< page-toc >}}
 
@@ -114,4 +114,4 @@ As the saying goes:
 
 So if you’re feeling stuck, burned out, or just curious what you might discover out there, maybe it’s time to lace up your boots and start walking. Your path is waiting.
 
-![100 kilometers to Santiago – a milestone worth celebrating at Casa do Rego. The journey was becoming real, and the finish line slowly came into view.](./hundretkm.JPEG)
+![100 kilometers to Santiago – a milestone worth celebrating at Casa do Rego. The journey was becoming real, and the finish line slowly came into view.](./hundretkm.jpeg)
