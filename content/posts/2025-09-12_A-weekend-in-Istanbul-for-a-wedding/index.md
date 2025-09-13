@@ -5,14 +5,14 @@ image = "maltape.JPEG"
 tags = ["Vacation", "Istanbul", "TurkishWedding", "TravelNotes"]
 +++
 
+![Wide view of Istanbul’s Sabiha Gökçen Airport tarmac with several Pegasus Airlines planes parked and low hills in the background.](./saw-airport.JPEG)
+
 Istanbul greets you in motion, ferries gliding across the Bosphorus, trams chiming past tea shops, and that steady city hum that never quite goes quiet. I based myself on the Asian side, in Maltepe, close enough to the shoreline that the sea breeze felt like a standing invitation to wander.
 
 ## Arrival
 
 Landing at Sabiha Gökçen (SAW) was smooth: spotless terminal, friendly staff, no fuss. Outside, the taxi stand felt… lively. One driver quoted €60 to my hotel, another €40, a third €50. I phoned a friend to sanity‑check; he laughed and told me to install [bitaksi](<https://apps.apple.com/de/app/bitaksi-your-closest-taxi/id589500723?l=en-GB> "bitaksi"), ensure the meter is on, and, if I wanted quicker pickups, add a small default tip in the app. Five minutes later I had a metered ride to Maltepe for about €20.
 > **Tip:** In Istanbul use {{< newtablink "https://apps.apple.com/de/app/bitaksi-your-closest-taxi/id589500723?l=en-GB" >}}bitaksi{{< /newtablink >}} or official yellow taxis with the meter running. You can also toggle a small tip in the app to secure faster pickups.
-
-![Wide view of Istanbul’s Sabiha Gökçen Airport tarmac with several Pegasus Airlines planes parked and low hills in the background.](./saw-airport.JPEG)
 
 ## Location & Hotel
 
