@@ -3,7 +3,7 @@ title = "Run NGINX Securely in Kubernetes"
 subtitle = "Why You Should Stop Using the Default Image"
 date = 2025-10-07T04:00:00
 image = "runnginx-small.jpg"
-tags = ["Kubernetes", "nginx", "Container", "Podman", "Security"]
+tags = ["Kubernetes", "nginx", "Container", "DevOps", "Security"]
 +++
 
 ![Minimalistic dark-blue cover image with white text reading ‘Run NGINX Securely in Kubernetes,’ surrounded by abstract Kubernetes hexagon and wheel icons in soft blue tones.](./runnginx-small.jpg)
