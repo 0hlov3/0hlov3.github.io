@@ -6,6 +6,10 @@ image = "kubeenetes-secrets-manager2.png"
 tags = ["Kubernetes", "DevOps", "Security", "Secrets"]
 +++
 
+![kubeenetes-secrets-manager2.png](./kubeenetes-secrets-manager2.png)
+
+{{< page-toc >}}
+
 Managing secrets in Kubernetes is one of those topics that looks simple at first and slowly becomes more opinionated the 
 deeper you go. Over time, tooling choices start to matter less in theory and much more in day-to-day operations.
 
