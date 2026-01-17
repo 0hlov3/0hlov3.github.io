@@ -121,6 +121,9 @@ From an operational perspective, this setup feels noticeably calmer:
 
 This aligns well with environments where operational simplicity and predictability matter more than maximizing feature depth.
 
+> Want the exact manifests and minimal Helm values I’m using (cert-manager Issuers/Certificates, ESO values, ClusterSecretStore, and an ExternalSecret example)?  
+> See the companion wiki page: {{< newtablink "https://wiki.privatetrace.io/en/Kubernetes/Security/external-secrets" >}}External Secrets Operator with Bitwarden Secrets Manager{{< /newtablink >}}.
+
 ## Why this matters (especially in homelabs and small clusters)
 
 A lot of Kubernetes advice is written with large enterprises in mind, often assuming dedicated platform and security teams. 
@@ -161,6 +164,7 @@ Sometimes the best architecture isn’t the most “correct” one, it’s the o
 
 ## Sources & Further Reading
 
+- {{< newtablink "https://wiki.privatetrace.io/en/Kubernetes/Security/external-secrets" >}}Companion wiki: Minimal ESO + Bitwarden setup (manifests & values){{< /newtablink >}}
 - {{< newtablink "https://github.com/external-secrets/external-secrets" >}}External Secrets{{< /newtablink >}}
 - {{< newtablink "https://github.com/external-secrets/external-secrets/blob/main/docs/examples/bitwarden.md" >}}Bitwarden support using webhook provider{{< /newtablink >}}
 - {{< newtablink "https://github.com/bitwarden/sm-kubernetes" >}}Bitwarden Secrets Manager Kubernetes Operator{{< /newtablink >}}
