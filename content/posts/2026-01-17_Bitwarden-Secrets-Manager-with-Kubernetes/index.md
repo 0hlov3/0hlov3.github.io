@@ -159,7 +159,7 @@ is the most pragmatic solution for my needs.
 
 Sometimes the best architecture isn’t the most “correct” one, it’s the one that stays boring in production.
 
-# Sources & Further Reading
+## Sources & Further Reading
 
 - {{< newtablink "https://github.com/external-secrets/external-secrets" >}}External Secrets{{< /newtablink >}}
 - {{< newtablink "https://github.com/external-secrets/external-secrets/blob/main/docs/examples/bitwarden.md" >}}Bitwarden support using webhook provider{{< /newtablink >}}
