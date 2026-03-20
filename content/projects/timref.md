@@ -1,7 +1,7 @@
 ---
 title: "TIMRef (TI-Messenger Referenzimplementierung)"
 description: "Design and operation of a highly available Kubernetes-based reference platform for secure real-time communication within the German Telematikinfrastruktur (TI)."
-tags: ["kubernetes", "golang", "operator", "gitops", "observability", "security", "identity"]
+tags: ["kubernetes", "golang", "operator", "gitops", "observability", "security", "identity", "secrets-management"]
 github: "https://github.com/gematik/TI-M-Referenzimplementierung"
 external: "https://ehealthblog.akquinet.de/ehealth-blog/blogbeitrag-details/ti-messenger-was-leistet-das-referenzsystem-von-akquinet"
 status: "active"
@@ -19,6 +19,8 @@ A custom Kubernetes Operator was developed in Go using Kubebuilder to automate c
 
 The platform integrates messaging services based on Matrix (Synapse), along with observability, security, and automation components, forming a scalable and resilient platform for real-time healthcare communication. Authentication and access to Kubernetes clusters were implemented using Pinniped in combination with Microsoft Entra ID to enable secure and centralized identity federation. Keycloak was integrated to model and validate multi-tenant authentication scenarios within the reference architecture.
 
+GitOps-based deployments were implemented using ArgoCD, including integration with the Argo CD Vault Plugin (AVP) to securely inject secrets from Azure Key Vault into Kubernetes workloads. This enabled centralized secrets management while keeping deployment workflows declarative and reproducible.
+
 ## Key Responsibilities
 
 - Design and operation of Kubernetes clusters (kubeadm-based) on vSphere
@@ -27,6 +29,7 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - Development of a custom Kubernetes Operator (Kubebuilder, Go)
 - Modeling platform workflows using Custom Resource Definitions (CRDs)
 - Implementation of GitOps-based deployments (ArgoCD)
+- Integration of Argo CD Vault Plugin (AVP) with Azure Key Vault for secure secrets management
 - Development of CI/CD pipelines (GitLab CI) for build and release automation
 - Implementation of end-to-end security concepts (ECC certificates, policy enforcement)
 - Implementation of identity and access management (Pinniped, Microsoft Entra ID)
@@ -45,6 +48,8 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - Infrastructure as Code (Packer, Terraform, Ansible)
 - VMware vSphere & NSX (NCP networking)
 - ArgoCD (GitOps)
+- Argo CD Vault Plugin (AVP)
+- Azure Key Vault
 - GitLab CI/CD
 - Observability (OpenTelemetry, Jaeger, Prometheus, Grafana, Elasticsearch)
 - Security (Kyverno, Falco, TLS/ECC certificates)
@@ -59,3 +64,4 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - Enabled standardized and automated platform operations through Kubernetes-native abstractions (CRDs, Operator)
 - Ensured compliance with strict regulatory and security requirements of the Telematikinfrastruktur
 - Established a fully automated, reproducible, and scalable platform foundation for TI-Messenger deployments
+- Implemented secure and centralized secrets management integrated into GitOps workflows
