@@ -1,7 +1,7 @@
 ---
 title: "TI-Messenger (Product Platform)"
 description: "Operation and continuous development of a production-grade, Kubernetes-based messaging platform for secure real-time communication in the German healthcare ecosystem."
-tags: ["kubernetes", "platform-engineering", "golang", "gitops", "security", "observability"]
+tags: ["kubernetes", "platform-engineering", "golang", "gitops", "security", "observability", "identity"]
 external: "https://akquinet.com/gesundheitswesen/tim.html"
 status: "active"
 starts: "2022"
@@ -16,7 +16,7 @@ The platform was designed for production workloads with a strong focus on reliab
 
 A custom Kubernetes Operator written in Go (Kubebuilder) was developed and extended to manage complex platform workflows and lifecycle operations. Platform behavior was modeled declaratively using Custom Resource Definitions (CRDs), enabling standardized and automated operations at scale.
 
-Stateful services such as PostgreSQL clusters were operated using CloudNativePG (CNPG), including automated backup and disaster recovery strategies using Velero and Barman Cloud. The platform also incorporates a service mesh (Linkerd) with mutual TLS (mTLS) to secure inter-service communication.
+Stateful services such as PostgreSQL clusters were operated using CloudNativePG (CNPG), including automated backup and disaster recovery strategies using Velero and Barman Cloud. The platform also incorporates a service mesh (Linkerd) with mutual TLS (mTLS) to secure inter-service communication. Authentication and access to Kubernetes clusters are managed using Pinniped in combination with Microsoft Entra ID, enabling secure and centralized identity federation. For customer-facing multi-tenancy, Keycloak is used to manage tenant isolation and authentication flows.
 
 A comprehensive observability stack (OpenTelemetry, Jaeger, Prometheus, Grafana, OpenSearch) was implemented to ensure full system visibility, traceability, and efficient incident response.
 
@@ -32,6 +32,8 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - Implementation of GitOps-based deployments (ArgoCD)
 - Development of CI/CD pipelines (GitLab CI) for build and release automation
 - Implementation of end-to-end security concepts (ECC certificates, mTLS via Linkerd, policy enforcement)
+- Implementation of identity and access management using Pinniped and Microsoft Entra ID
+- Design and operation of multi-tenant authentication architecture using Keycloak
 - Setup and operation of observability stack (OpenTelemetry, Jaeger, Prometheus, Grafana, OpenSearch)
 - Provisioning and operation of PostgreSQL clusters using CloudNativePG (CNPG)
 - Implementation of backup and disaster recovery strategies (Velero, Barman Cloud)
@@ -51,6 +53,7 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - Service Mesh (Linkerd, mTLS)
 - Observability (OpenTelemetry, Jaeger, Prometheus, Grafana, OpenSearch)
 - Security (Kyverno, Falco, TLS/ECC certificates)
+- Identity & Access Management (Pinniped, Microsoft Entra ID, Keycloak)
 - PostgreSQL (CloudNativePG)
 - Backup & Disaster Recovery (Velero, Barman Cloud)
 - Distributed systems and platform engineering
