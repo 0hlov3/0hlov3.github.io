@@ -1,7 +1,7 @@
 ---
 title: "TIMRef (TI-Messenger Referenzimplementierung)"
 description: "Design and operation of a highly available Kubernetes-based reference platform for secure real-time communication within the German Telematikinfrastruktur (TI)."
-tags: ["kubernetes", "golang", "operator", "gitops", "observability", "security"]
+tags: ["kubernetes", "golang", "operator", "gitops", "observability", "security", "identity"]
 github: "https://github.com/gematik/TI-M-Referenzimplementierung"
 external: "https://ehealthblog.akquinet.de/ehealth-blog/blogbeitrag-details/ti-messenger-was-leistet-das-referenzsystem-von-akquinet"
 status: "active"
@@ -17,7 +17,7 @@ The platform was built to support secure, interoperable real-time communication 
 
 A custom Kubernetes Operator was developed in Go using Kubebuilder to automate complex platform workflows. Platform logic was modeled declaratively using Custom Resource Definitions (CRDs), enabling standardized and reproducible operations directly via the Kubernetes API.
 
-The platform integrates messaging services based on Matrix (Synapse), along with observability, security, and automation components, forming a scalable and resilient platform for real-time healthcare communication.
+The platform integrates messaging services based on Matrix (Synapse), along with observability, security, and automation components, forming a scalable and resilient platform for real-time healthcare communication. Authentication and access to Kubernetes clusters were implemented using Pinniped in combination with Microsoft Entra ID to enable secure and centralized identity federation. Keycloak was integrated to model and validate multi-tenant authentication scenarios within the reference architecture.
 
 ## Key Responsibilities
 
@@ -29,6 +29,8 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - Implementation of GitOps-based deployments (ArgoCD)
 - Development of CI/CD pipelines (GitLab CI) for build and release automation
 - Implementation of end-to-end security concepts (ECC certificates, policy enforcement)
+- Implementation of identity and access management (Pinniped, Microsoft Entra ID)
+- Integration of Keycloak for multi-tenant authentication scenarios
 - Setup of observability stack (OpenTelemetry, Jaeger, Prometheus, Grafana, logging)
 - Incident, problem, and change management in a production environment
 - Provisioning and operation of PostgreSQL clusters using CloudNativePG (CNPG)
@@ -46,6 +48,7 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - GitLab CI/CD
 - Observability (OpenTelemetry, Jaeger, Prometheus, Grafana, Elasticsearch)
 - Security (Kyverno, Falco, TLS/ECC certificates)
+- Identity & Access Management (Pinniped, Microsoft Entra ID, Keycloak)
 - Distributed systems and platform engineering
 - PostgreSQL (CloudNativePG)
 - Backup & Disaster Recovery (Velero, Barman Cloud)
