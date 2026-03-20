@@ -1,7 +1,7 @@
 ---
 title: "TI-Messenger (Product Platform)"
 description: "Operation and continuous development of a production-grade, Kubernetes-based messaging platform for secure real-time communication in the German healthcare ecosystem."
-tags: ["kubernetes", "platform-engineering", "golang", "gitops", "security", "observability", "identity"]
+tags: ["kubernetes", "platform-engineering", "golang", "gitops", "security", "observability", "identity", "secrets-management"]
 external: "https://akquinet.com/gesundheitswesen/tim.html"
 status: "active"
 starts: "2022"
@@ -16,7 +16,7 @@ The platform was designed for production workloads with a strong focus on reliab
 
 A custom Kubernetes Operator written in Go (Kubebuilder) was developed and extended to manage complex platform workflows and lifecycle operations. Platform behavior was modeled declaratively using Custom Resource Definitions (CRDs), enabling standardized and automated operations at scale.
 
-Stateful services such as PostgreSQL clusters were operated using CloudNativePG (CNPG), including automated backup and disaster recovery strategies using Velero and Barman Cloud. The platform also incorporates a service mesh (Linkerd) with mutual TLS (mTLS) to secure inter-service communication. Authentication and access to Kubernetes clusters are managed using Pinniped in combination with Microsoft Entra ID, enabling secure and centralized identity federation. For customer-facing multi-tenancy, Keycloak is used to manage tenant isolation and authentication flows.
+Stateful services such as PostgreSQL clusters were operated using CloudNativePG (CNPG), including automated backup and disaster recovery strategies using Velero and Barman Cloud. The platform also incorporates a service mesh (Linkerd) with mutual TLS (mTLS) to secure inter-service communication. Authentication and access to Kubernetes clusters are managed using Pinniped in combination with Microsoft Entra ID, enabling secure and centralized identity federation. For customer-facing multi-tenancy, Keycloak is used to manage tenant isolation and authentication flows. Secrets management is implemented using External Secrets in combination with Azure Key Vault, enabling secure, centralized, and dynamic injection of secrets into Kubernetes workloads.
 
 A comprehensive observability stack (OpenTelemetry, Jaeger, Prometheus, Grafana, OpenSearch) was implemented to ensure full system visibility, traceability, and efficient incident response.
 
@@ -34,6 +34,7 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - Implementation of end-to-end security concepts (ECC certificates, mTLS via Linkerd, policy enforcement)
 - Implementation of identity and access management using Pinniped and Microsoft Entra ID
 - Design and operation of multi-tenant authentication architecture using Keycloak
+- Implementation of secrets management using External Secrets and Azure Key Vault
 - Setup and operation of observability stack (OpenTelemetry, Jaeger, Prometheus, Grafana, OpenSearch)
 - Provisioning and operation of PostgreSQL clusters using CloudNativePG (CNPG)
 - Implementation of backup and disaster recovery strategies (Velero, Barman Cloud)
@@ -54,6 +55,7 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - Observability (OpenTelemetry, Jaeger, Prometheus, Grafana, OpenSearch)
 - Security (Kyverno, Falco, TLS/ECC certificates)
 - Identity & Access Management (Pinniped, Microsoft Entra ID, Keycloak)
+- Secrets Management (External Secrets, Azure Key Vault)
 - PostgreSQL (CloudNativePG)
 - Backup & Disaster Recovery (Velero, Barman Cloud)
 - Distributed systems and platform engineering
@@ -63,5 +65,5 @@ The platform integrates messaging services based on Matrix (Synapse), along with
 - Delivered a production-grade messaging platform for secure healthcare communication
 - Enabled scalable and reliable real-time communication based on Matrix within a regulated environment
 - Established Kubernetes-native automation through Operators and CRDs, reducing operational complexity
-- Implemented end-to-end security including mTLS and policy enforcement aligned with regulatory requirements
+- Implemented end-to-end security including mTLS, identity federation, and centralized secrets management
 - Ensured high platform reliability and observability for production workloads
