@@ -2,7 +2,7 @@
 title: "Kaniko Contributions"
 description: "Open-source contributions to Kaniko, focusing on build performance, caching, and testing improvements for container image builds in Kubernetes environments."
 tags: ["golang", "kubernetes", "containers", "ci-cd", "open-source", "kaniko", "supply-chain-security"]
-external: "https://github.com/osscontainertools/kaniko"
+github: "https://github.com/osscontainertools/kaniko"
 status: "active"
 starts: "2025"
 ends: "present"
