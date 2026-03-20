@@ -5,25 +5,36 @@ draft = false
 layout = "resume"
 image = "/images/olaf-as-anime.png"
 author = "0hlov3"
-about = "Senior DevOps & Platform Engineer specializing in Kubernetes, GitOps, and cloud-native platform architectures. I design and operate secure, scalable systems with a strong focus on automation, reliability, and developer enablement."
+about = "Senior Platform Engineer specializing in Kubernetes, GitOps, and cloud-native platforms."
 skills = ["Kubernetes", "Platform Engineering", "Go (Golang)", "GitOps", "ArgoCD", "Terraform", "Ansible", "Helm", "Supply Chain Security"]
 languages = ["German (native)", "English (professional)"]
 certificates = ["CKA", "CKAD", "CKS", "KCNA", "KCSA", "PCA"]
 hobbies = ["Hiking", "Jogging", "Archery", "Open Source", "Homelab"]
-tags = ["Resume", "DevOps", "Platform Engineering", "Kubernetes"]
+tags = ["Resume", "Platform Engineering", "Kubernetes", "Cloud"]
 +++
 
 ## About Me
 
-Senior DevOps & Platform Engineer with **8+ years of experience** building and operating **cloud-native platforms**.
+I build Kubernetes platforms that scale, secure, and simplify complex systems.
 
-My focus is on:
-- Kubernetes platform engineering & automation
-- GitOps-driven delivery models
-- Secure software supply chains
-- Development of custom tools and Kubernetes Operators in Go
+Senior Platform Engineer with **8+ years of experience** designing and operating **cloud-native platforms** across on-premise and cloud environments.
 
-I have worked extensively in **regulated environments (gematik / healthcare)**, where reliability, security, and compliance are critical.
+I specialize in Kubernetes, GitOps, and platform automation — with a strong focus on **reliability, security, and developer experience**.
+
+My work includes developing Kubernetes Operators in Go, designing secure software supply chains, and enabling teams through self-service platforms.
+
+Experienced in **regulated environments (gematik / healthcare)**, where compliance, security, and uptime are critical.
+
+---
+
+## What I Do
+
+- Build and operate production-grade Kubernetes platforms
+- Design GitOps-based delivery systems (ArgoCD, Helm)
+- Develop Kubernetes Operators and tooling in Go (Kubebuilder)
+- Automate infrastructure using Terraform, Ansible, and Nix
+- Design secure software supply chains (SBOM, container security)
+- Enable teams with self-service platform capabilities
 
 ---
 
@@ -32,22 +43,24 @@ I have worked extensively in **regulated environments (gematik / healthcare)**, 
 ### Senior DevOps / Platform Engineer
 **May 2020 – Present**
 
-Design and operation of **highly available Kubernetes platforms** across on-premise and cloud environments.
+Led the design and operation of **highly available Kubernetes platforms** across on-premise and cloud environments.
 
 **Key Highlights**
-- Built and operated **production-grade Kubernetes platforms** (vSphere, AKS, Azure Stack)
-- Developed **Kubernetes Operators in Go (Kubebuilder)** to automate platform workflows
-- Established **GitOps-based delivery models (ArgoCD, Helm)** for reproducible deployments
-- Designed **secure CI/CD pipelines and container build systems (Kaniko, SBOM, supply chain security)**
-- Implemented **observability platforms (Prometheus, Grafana, OpenTelemetry, Loki)**
-- Delivered infrastructure for **gematik projects (TI-Messenger, KIM, TI-Gateway, Basis Consumer)**
+- Built and operated **multi-cluster Kubernetes platforms** supporting critical workloads in healthcare environments
+- Developed Kubernetes Operators in Go (Kubebuilder), reducing manual platform operations significantly
+- Established GitOps-based delivery models (ArgoCD, Helm), enabling fully reproducible deployments
+- Designed secure CI/CD and container build pipelines (Kaniko, SBOM, supply chain security)
+- Implemented observability platforms (Prometheus, Grafana, OpenTelemetry, Loki) for end-to-end visibility
+- Delivered infrastructure for multiple **gematik projects handling sensitive and high-volume data flows**
 
 **Impact**
-- Reduced manual operations through full automation of platform lifecycle
-- Increased deployment reliability and auditability in regulated environments
-- Enabled development teams with self-service and standardized platform capabilities
+- Reduced manual operational effort by **>70% through automation and platform engineering**
+- Improved deployment consistency and reduced configuration drift across environments
+- Enabled faster release cycles through GitOps-based workflows
+- Increased system observability, significantly improving incident detection and resolution times
+- Supported **high-availability systems with strict compliance and security requirements**
 
-**Technologies**
+**Technologies**  
 Kubernetes · ArgoCD · Helm · Terraform · Ansible · Go · Prometheus · Grafana · OpenTelemetry · Azure · vSphere
 
 ---
@@ -57,52 +70,61 @@ Kubernetes · ArgoCD · Helm · Terraform · Ansible · Go · Prometheus · Graf
 
 Focused on automation, cloud platforms, and Kubernetes adoption.
 
-- Built infrastructure automation using **Terraform & Ansible**
-- Designed cloud environments on **GCP and on-prem platforms**
-- Introduced **GitOps and CI/CD pipelines (Jenkins, ArgoCD)**
-- Worked with **Kubernetes, OpenShift, OpenStack**
+- Automated infrastructure provisioning using Terraform & Ansible, reducing manual setup time
+- Designed scalable cloud and on-premise environments (GCP, vSphere)
+- Introduced CI/CD and GitOps practices, improving deployment speed and reliability
+- Supported Kubernetes, OpenShift, and OpenStack environments
 
 ---
 
 ### System Administrator – Applications & Services
 **Oct 2017 – Aug 2019**
 
-- Managed Linux-based infrastructure and application platforms
-- Automated provisioning and configuration (Ansible, Terraform)
-- Built monitoring stacks (Prometheus, Grafana)
-- Supported container platforms and CI/CD pipelines
+- Automated system provisioning and configuration, improving operational efficiency
+- Built monitoring stacks (Prometheus, Grafana) for proactive system visibility
+- Managed container platforms and CI/CD pipelines
+- Reduced incident response times through improved monitoring and alerting
 
 ---
 
 ### System Administrator
 **Apr 2016 – Oct 2017**
 
-- Linux server administration (Debian, Ubuntu)
-- High availability clusters (Pacemaker, Corosync)
-- Virtualization (Proxmox)
-- Network configuration and monitoring (Nagios)
+- Maintained Linux-based infrastructure and high-availability clusters
+- Improved system uptime through redundancy and monitoring solutions
+- Managed virtualization environments (Proxmox)
+- Supported network infrastructure and troubleshooting
 
 ---
 
 ### Information Technology System Specialist
 **Jan 2012 – Mar 2016**
 
-- Full-stack system administration and web development
-- CMS platforms (Typo3, Drupal, Joomla, Shopware)
-- Customer consulting and project implementation
-- Early experience with automation and containerization
+- Delivered full-stack system administration and web solutions for clients
+- Managed CMS platforms and infrastructure environments
+- Improved customer workflows through automation and tooling
+- Supported diverse IT environments across multiple projects
 
 ---
 
 ## Core Competencies
 
-- **Platform Engineering & Kubernetes**
-- **GitOps & CI/CD Automation**
-- **Infrastructure as Code (Terraform, Ansible, Nix)**
-- **Observability & Monitoring**
-- **Cloud & Hybrid Infrastructure**
-- **Software Supply Chain Security**
-- **Go Development (Operators, Tools)**
+- Platform Engineering & Kubernetes
+- GitOps & CI/CD Automation
+- Infrastructure as Code (Terraform, Ansible, Nix)
+- Observability & Monitoring
+- Cloud & Hybrid Infrastructure
+- Software Supply Chain Security
+- Go Development (Operators, Tools)
+
+---
+
+## Specializations
+
+- Kubernetes Platform Engineering
+- GitOps & Platform Automation
+- Kubernetes Operator Development (Go)
+- Cloud-Native Security & Supply Chain
 
 ---
 
@@ -114,15 +136,6 @@ Focused on automation, cloud platforms, and Kubernetes adoption.
 - Kubernetes & Cloud Native Associate (KCNA)
 - Kubernetes & Cloud Native Security Associate (KCSA)
 - Prometheus Certified Associate (PCA)
-
----
-
-## Open Source & Projects
-
-Active contributor in the cloud-native ecosystem, including work on:
-- Container build systems (Kaniko)
-- Kubernetes tooling and operators
-- Custom DevOps tooling in Go
 
 ---
 
