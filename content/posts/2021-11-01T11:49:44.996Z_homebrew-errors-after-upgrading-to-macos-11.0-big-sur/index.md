@@ -11,7 +11,7 @@ image: "1.jpeg"
 images:
  - "1.jpeg"
 
-tags: ['macOSBigSur','Homebrew','CommandLineTools','Debugging','macOSTroubleshooting']
+tags: ['macOS Big Sur','Homebrew','Command Line Tools','Debugging','macOS Troubleshooting']
 ---
 {{< figure src="1.jpeg" caption="Photo by {{< newtablink \"https://unsplash.com/@cgower?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit\" >}}Christopher Gower{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit\" >}}Unsplash{{< /newtablink >}}" alt="" >}}
 

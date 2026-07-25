@@ -5,7 +5,7 @@ date = 2025-03-29T08:00:00
 created_at = "29-03-2025 09:14 PM"
 updated_at = "29-03-2025 09:34 PM"
 image = "erik-van-dijk-i0po_cr-Rq8-unsplash.jpg"
-tags = ["security", "falco", "runtime-security", "ebpf", "kubernetes"]
+tags = ["Security", "Falco", "Runtime Security", "eBPF", "Kubernetes"]
 +++
 
 {{< figure src="erik-van-dijk-i0po_cr-Rq8-unsplash.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@erikvandijk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Erik van Dijk{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/brown-and-white-owl-flying-during-daytime-i0po_cr-Rq8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="brown and white owl flying during daytime" >}}

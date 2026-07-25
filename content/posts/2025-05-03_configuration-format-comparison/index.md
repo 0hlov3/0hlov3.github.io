@@ -3,7 +3,7 @@ title = "Configuration Format Comparison"
 subtitle = "Understand INI, XML, JSON, YAML, TOML & ENV"
 date = 2025-05-02T08:00:00
 image = "huy-phan-yNBoyifsl5w-unsplash.jpg"
-tags = ["configuration", "devops", "sre", "yaml", "json"]
+tags = ["Configuration", "DevOps", "SRE", "YAML", "JSON"]
 +++
 
 {{< figure src="huy-phan-yNBoyifsl5w-unsplash.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@huyphan2602?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Huy Phan{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/a-mechanical-keyboard-sits-on-a-desk-mat-yNBoyifsl5w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="brown and white owl flying during daytime" >}}

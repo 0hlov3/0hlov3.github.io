@@ -4,7 +4,7 @@ subtitle = 'Using External Secrets for OIDC'
 author = "0hlov3"
 date = 2025-02-16T16:00:00
 draft = false
-tags = ['ArgoCD','Zitadel','Kubernetes','Helm','OIDC Authentication']
+tags = ['Argo CD','Zitadel','Kubernetes','Helm','OIDC Authentication']
 +++
 
 When integrating ArgoCD with an OpenID Connect (OIDC) provider like Zitadel, managing secrets securely is crucial. While the {{< newtablink \"https://argo-cd.readthedocs.io/en/latest/operator-manual/user-management/zitadel/\" >}}official documentation{{< /newtablink >}} provides comprehensive guidance, this article focuses on a Helm-based setup where ArgoCD retrieves OIDC credentials from an external Kubernetes Secret.

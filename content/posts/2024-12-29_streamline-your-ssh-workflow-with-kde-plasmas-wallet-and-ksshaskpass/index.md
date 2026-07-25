@@ -13,7 +13,7 @@ images:
  - "2.png"
  - "3.png"
  
-tags: ["Linux","Kde Plasma","Openssh","Ssh Keys","Ssh Agent"]
+tags: ["Linux","KDE Plasma","OpenSSH","SSH Keys","SSH Agent"]
 
 ---
 {{< figure src="1.jpeg" caption="Edited Photo — The Original Photo is by {{< newtablink \"https://unsplash.com/@hidd3n?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Kevin Horvat{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/flat-screen-monitor-turned-on-Pyjp2zmxuLk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="flat screen monitor turned-on" >}}

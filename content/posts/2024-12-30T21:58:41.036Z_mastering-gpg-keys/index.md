@@ -11,7 +11,7 @@ image: "1.png"
 images:
  - "1.png"
 
-tags: ['Digital Security','Gpg','Kde Wallet','Open Source','Encryption']
+tags: ['Digital Security','GPG','KDE Wallet','Open Source','Encryption']
 
 ---
 ![](1.png)

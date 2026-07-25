@@ -5,7 +5,7 @@ author = "0hlov3"
 date = 2025-02-20T16:00:00
 draft = false
 image = "dan-cristian-padure-noOXRT9gfQ8-unsplash.jpg"
-tags = ['DevOps Tools','Version Management','GoLang','Terraform','Productivity Hacks']
+tags = ['DevOps Tools','Version Management','Go','Terraform','Productivity Hacks']
 +++
 {{< figure src="dan-cristian-padure-noOXRT9gfQ8-unsplash.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@dancristianpaduret?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Dan Cristian Pădureț{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/assorted-color-plastic-tools-on-gray-wooden-table-noOXRT9gfQ8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="assorted color plastic tools on gray wooden table" >}}
 

@@ -4,7 +4,7 @@ subtitle = 'Host It for Free on GitHub Pages!'
 date = 2025-01-20T00:01:00-00:00
 draft = false
 image = "hugo-preview.jpg"
-tags = ['Hugo','GitHubPages','StaticSiteGenerators']
+tags = ['Hugo','GitHub Pages','Static Site Generators']
 +++
 
 ![hugo-preview.jpg](<hugo-preview.jpg>)

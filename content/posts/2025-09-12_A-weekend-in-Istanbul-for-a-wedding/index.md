@@ -2,7 +2,7 @@
 title = "A weekend in Istanbul for a wedding"
 date = 2025-09-13T00:01:00
 image = "maltape.JPEG"
-tags = ["Vacation", "Istanbul", "TurkishWedding", "TravelNotes"]
+tags = ["Vacation", "Istanbul", "Turkish Wedding", "Travel Notes"]
 +++
 
 ![Wide view of Istanbul’s Sabiha Gökçen Airport tarmac with several Pegasus Airlines planes parked and low hills in the background.](./saw-airport.JPEG)

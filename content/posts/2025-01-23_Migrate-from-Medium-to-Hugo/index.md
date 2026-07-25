@@ -4,7 +4,7 @@ subtitle = 'Own Your Blog, Own Your Style'
 date = 2025-01-23T20:01:00-00:00
 draft = false
 image = "Freedomjourneypath.jpg"
-tags = ['Hugo','GitHubPages','StaticSiteGenerators','Migration','FreeHosting']
+tags = ['Hugo','GitHub Pages','Static Site Generators','Migration','Free Hosting']
 +++
 {{< figure src="Freedomjourneypath.jpg" caption="Photo by {{< newtablink \"https://unsplash.com/@lili_popper?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Lili Popper{{< /newtablink >}} on {{< newtablink \"https://unsplash.com/photos/gray-and-white-pathway-between-green-plants-on-vast-valley-lu15z1m_KfM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\" >}}Unsplash{{< /newtablink >}}" alt="gray and white pathway between green plants on vast valley" >}}
 

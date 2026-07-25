@@ -3,7 +3,7 @@ title = "Walking the Camino Frances"
 subtitle = "Reflections from the Way"
 date = 2025-06-13T00:01:00
 image = "forest.jpeg"
-tags = ["camino de santiago", "camino frances", "long distance hiking", "personal growth", "digital detox"]
+tags = ["Camino de Santiago", "Camino Frances", "Long Distance Hiking", "Personal Growth", "Digital Detox"]
 +++
 
 ![A peaceful river winding through the lush Galician landscape – one of many quiet moments along the Camino that reminded me why I chose to walk.](./forest.jpeg)
