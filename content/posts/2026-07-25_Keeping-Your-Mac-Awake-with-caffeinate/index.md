@@ -2,7 +2,7 @@
 title = "Keeping your Mac awake with caffeinate"
 subtitle = "A Small macOS Command Worth Remembering"
 date = 2026-07-25T04:00:00
-image = "macos-caffeinate.png"
+image = "caffeinate.jpg"
 tags = ["Apple", "macOS", "Terminal", "CLI", "Productivity"]
 +++
 
