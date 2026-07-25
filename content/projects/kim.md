@@ -1,7 +1,7 @@
 ---
 title: "KIM (Kommunikation im Medizinwesen)"
 description: "Design and operation of a highly secure and scalable communication platform for the exchange of medical data within the German Telematikinfrastruktur (TI)."
-tags: ["kubernetes", "iac", "healthcare", "distributed-systems", "high-availability", "identity", "secrets-management"]
+tags: ["Kubernetes", "Infrastructure as Code", "Healthcare", "Distributed Systems", "High Availability", "Identity", "Secrets Management"]
 external: "https://akquinet.com/gesundheitswesen/kim.html"
 status: "active"
 starts: "2020"

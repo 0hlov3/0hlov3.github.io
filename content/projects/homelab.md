@@ -1,7 +1,7 @@
 ---
 title: "Homelab"
 description: "My self-hosted infrastructure running on bare metal Kubernetes — GitOps-managed with ArgoCD, monitoring via Grafana and Prometheus."
-tags: ["kubernetes", "argocd", "self-hosted"]
+tags: ["Kubernetes", "Argo CD", "Self-Hosted"]
 github: "https://github.com/0hlov3"
 status: "wip"
 ---

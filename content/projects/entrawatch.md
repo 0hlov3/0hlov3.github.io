@@ -1,7 +1,7 @@
 ---
 title: "EntraWatch"
 description: "Internal cloud-native observability and governance tool for Azure Entra ID, providing visibility into identity hygiene, credential expiry, and tenant compliance."
-tags: ["golang", "azure", "entra-id", "prometheus", "kubernetes", "helm", "internal-tooling", "security"]
+tags: ["Go", "Azure", "Entra ID", "Prometheus", "Kubernetes", "Helm", "Internal Tooling", "Security"]
 status: "active"
 starts: "2024"
 ends: "present"

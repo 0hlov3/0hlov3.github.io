@@ -1,7 +1,7 @@
 ---
 title: "kubecertmetrics"
 description: "Lightweight Prometheus exporter for monitoring TLS certificate expiration in Kubernetes and CI/CD environments."
-tags: ["golang", "kubernetes", "prometheus", "observability", "devops", "security", "helm"]
+tags: ["Go", "Kubernetes", "Prometheus", "Observability", "DevOps", "Security", "Helm"]
 codeberg: "https://codeberg.org/0hlov3/kubecertmetrics"
 status: "active"
 starts: "2025"

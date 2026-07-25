@@ -1,7 +1,7 @@
 ---
 title: "TIMRef (TI-Messenger Referenzimplementierung)"
 description: "Design and operation of a highly available Kubernetes-based reference platform for secure real-time communication within the German Telematikinfrastruktur (TI)."
-tags: ["kubernetes", "golang", "operator", "gitops", "observability", "security", "identity", "secrets-management"]
+tags: ["Kubernetes", "Go", "Operator", "GitOps", "Observability", "Security", "Identity", "Secrets Management"]
 github: "https://github.com/gematik/TI-M-Referenzimplementierung"
 external: "https://ehealthblog.akquinet.de/ehealth-blog/blogbeitrag-details/ti-messenger-was-leistet-das-referenzsystem-von-akquinet"
 status: "active"

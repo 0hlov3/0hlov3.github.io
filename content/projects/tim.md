@@ -1,7 +1,7 @@
 ---
 title: "TI-Messenger (Product Platform)"
 description: "Operation and continuous development of a production-grade, Kubernetes-based messaging platform for secure real-time communication in the German healthcare ecosystem."
-tags: ["kubernetes", "platform-engineering", "golang", "gitops", "security", "observability", "identity", "secrets-management"]
+tags: ["Kubernetes", "Platform Engineering", "Go", "GitOps", "Security", "Observability", "Identity", "Secrets Management"]
 external: "https://akquinet.com/gesundheitswesen/tim.html"
 status: "active"
 starts: "2022"

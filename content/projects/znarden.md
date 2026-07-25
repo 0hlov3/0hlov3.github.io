@@ -1,7 +1,7 @@
 ---
 title: "znarden"
 description: "Terminal-based CLI and TUI client for interacting with Znuny/OTRS ticket systems, designed for operational visibility and efficient ticket workflows."
-tags: ["golang", "cli", "tui", "bubbletea", "devops", "tooling", "automation"]
+tags: ["Go", "CLI", "TUI", "Bubble Tea", "DevOps", "Tooling", "Automation"]
 codeberg: "https://codeberg.org/0hlov3/znarden"
 status: "active"
 starts: "2025"

@@ -1,7 +1,7 @@
 ---
 title: "eHealth Platform (Self-Service Portal)"
 description: "Deployment and operation of a Kubernetes-based self-service platform on Azure, enabling automated product provisioning for healthcare services."
-tags: ["azure", "aks", "terraform", "ci-cd", "helm", "platform-engineering"]
+tags: ["Azure", "AKS", "Terraform", "CI/CD", "Helm", "Platform Engineering"]
 external: "https://ehealth.akquinet.de/"
 status: "active"
 starts: "2020"

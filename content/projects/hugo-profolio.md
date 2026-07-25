@@ -1,7 +1,7 @@
 ---
 title: "hugo-profolio"
 description: "A minimal, dark-mode-first Hugo theme for developers, featuring a clean portfolio, blog, and resume layout."
-tags: ["hugo", "frontend", "open-source", "theming"]
+tags: ["Hugo", "Frontend", "Open Source", "Theming"]
 github: "https://github.com/0hlov3/hugo-theme-hugoprofolio"
 demo: "https://schoenwald.aero"
 status: "active"
